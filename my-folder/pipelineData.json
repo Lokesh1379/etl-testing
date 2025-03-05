@@ -1,0 +1,96 @@
+[
+  {
+    "id": "ePcaqHvz6tx9xDknnx8_E",
+    "job_name": "Pipeline 1",
+    "run_type": "",
+    "global_properties": [],
+    "variables": [],
+    "settings": {
+      "concurrancy": "",
+      "elapsed_time_metric": "",
+      "isElapsedTimeMetricChecked": false
+    },
+    "connections": [
+      {
+        "conn_id": "eS3VqAopldEwGCGXV-S56",
+        "name": "JDBC connection",
+        "id": 1,
+        "input_items": [
+          {
+            "url": "https://dev.tourdeals.co.in/",
+            "username": "loki1379",
+            "password": "Loki@1379",
+            "database": "jobportal"
+          }
+        ]
+      }
+    ],
+    "tasks": [
+      {
+        "u_id": "-XJVxsdHiGiAK7-frYH8u",
+        "id": "2-1-1",
+        "name": "ReadJDBC",
+        "description": "",
+        "activity_state": "",
+        "timeout": "",
+        "retry": "",
+        "retry_interval": "",
+        "secure_input": false,
+        "secure_output": false,
+        "input_values": [
+          {
+            "conn_id": "",
+            "tbname": "",
+            "query": ""
+          }
+        ],
+        "user_properties": []
+      },
+      {
+        "u_id": "br4vNv0OUEGKei8kIVAMf",
+        "id": "3-1",
+        "name": "Filter",
+        "description": "",
+        "activity_state": "",
+        "timeout": "",
+        "retry": "",
+        "retry_interval": "",
+        "secure_input": false,
+        "secure_output": false,
+        "input_values": [
+          {
+            "username": "",
+            "password": "",
+            "port number": "",
+            "database": "",
+            "terms": ""
+          }
+        ],
+        "user_properties": []
+      },
+      {
+        "u_id": "VQQyPmxxf5ghsjtL4AO-9",
+        "id": "2-2-1",
+        "name": "WriteJDBC",
+        "description": "",
+        "activity_state": "",
+        "timeout": "",
+        "retry": "",
+        "retry_interval": "",
+        "secure_input": false,
+        "secure_output": false,
+        "input_values": [
+          {
+            "conn_id": "",
+            "tbname": ""
+          }
+        ],
+        "user_properties": []
+      }
+    ],
+    "triggers": {
+      "pipeline_id": "ePcaqHvz6tx9xDknnx8_E",
+      "triggers_data": []
+    }
+  }
+]
