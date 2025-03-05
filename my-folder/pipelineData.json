@@ -3,23 +3,37 @@
     "id": "ePcaqHvz6tx9xDknnx8_E",
     "job_name": "fromgit",
     "run_type": "",
-    "global_properties": [],
-    "variables": [],
+    "global_properties": [
+      {
+        "id": "NsjMpI5eQ0335Z6_l_vHH",
+        "name": "datasets",
+        "value": "jdbc",
+        "type": "int"
+      }
+    ],
+    "variables": [
+      {
+        "id": "biWcF4Y2ff-go9LFsY1AI",
+        "name": "readjdbc",
+        "value": "write jdbc",
+        "type": "int"
+      }
+    ],
     "settings": {
-      "concurrancy": "",
-      "elapsed_time_metric": "",
-      "isElapsedTimeMetricChecked": false
+      "concurrancy": "concurrancy",
+      "elapsed_time_metric": "metric",
+      "isElapsedTimeMetricChecked": true
     },
     "connections": [
       {
-        "conn_id": "eS3VqAopldEwGCGXV-S56",
+        "conn_id": "xzHnbrUo2nvyGgOhdrCcN",
         "name": "JDBC connection",
         "id": 1,
         "input_items": [
           {
             "url": "https://dev.tourdeals.co.in/",
             "username": "loki1379",
-            "password": "Loki@1379",
+            "password": "Tanu@1999",
             "database": "jobportal"
           }
         ]
@@ -27,16 +41,15 @@
     ],
     "tasks": [
       {
-        "u_id": "-XJVxsdHiGiAK7-frYH8u",
-        "id": "2-1-1",
         "name": "ReadJDBC",
-        "description": "",
-        "activity_state": "",
-        "timeout": "",
-        "retry": "",
-        "retry_interval": "",
-        "secure_input": false,
-        "secure_output": false,
+        "u_id": "-XJVxsdHiGiAK7-frYH8u",
+        "description": "Reading data from data base",
+        "activity_state": "Activated",
+        "timeout": "1",
+        "retry": "1",
+        "retry_interval": "1",
+        "secure_input": true,
+        "secure_output": true,
         "input_values": [
           {
             "conn_id": "",
@@ -44,19 +57,24 @@
             "query": ""
           }
         ],
-        "user_properties": []
+        "user_properties": [
+          {
+            "name": "emp ",
+            "value": "shiva",
+            "id": "-LOh0X9kHYwH2N5bIg7PP"
+          }
+        ]
       },
       {
-        "u_id": "br4vNv0OUEGKei8kIVAMf",
-        "id": "3-1",
         "name": "Filter",
-        "description": "",
-        "activity_state": "",
-        "timeout": "",
-        "retry": "",
-        "retry_interval": "",
-        "secure_input": false,
-        "secure_output": false,
+        "u_id": "br4vNv0OUEGKei8kIVAMf",
+        "description": "filtering jdbc data",
+        "activity_state": "Activated",
+        "timeout": "2",
+        "retry": "2",
+        "retry_interval": "2",
+        "secure_input": true,
+        "secure_output": true,
         "input_values": [
           {
             "username": "",
@@ -65,67 +83,28 @@
             "database": "",
             "terms": ""
           }
-        ],
-        "user_properties": []
+        ]
       },
       {
-        "u_id": "VQQyPmxxf5ghsjtL4AO-9",
-        "id": "2-2-1",
         "name": "WriteJDBC",
-        "description": "",
-        "activity_state": "",
-        "timeout": "",
-        "retry": "",
-        "retry_interval": "",
-        "secure_input": false,
-        "secure_output": false,
+        "u_id": "VQQyPmxxf5ghsjtL4AO-9",
+        "description": "writing jdbc server data",
+        "activity_state": "Activated",
+        "timeout": "2",
+        "retry": "2",
+        "retry_interval": "2",
+        "secure_input": true,
+        "secure_output": true,
         "input_values": [
           {
             "conn_id": "",
             "tbname": ""
           }
-        ],
-        "user_properties": []
+        ]
       }
     ],
     "triggers": {
       "pipeline_id": "ePcaqHvz6tx9xDknnx8_E",
-      "triggers_data": []
-    }
-  },
-  {
-    "id": "xFh8ucUGdKG9pUAcwZjdW",
-    "job_name": "Pipeline 1",
-    "run_type": "",
-    "global_properties": [],
-    "variables": [],
-    "settings": {
-      "concurrancy": "",
-      "elapsed_time_metric": "",
-      "isElapsedTimeMetricChecked": false
-    },
-    "connections": [],
-    "tasks": [],
-    "triggers": {
-      "pipeline_id": "xFh8ucUGdKG9pUAcwZjdW",
-      "triggers_data": []
-    }
-  },
-  {
-    "id": "Fsh1DX-b7ODipupGMD3tO",
-    "job_name": "Pipeline 2",
-    "run_type": "",
-    "global_properties": [],
-    "variables": [],
-    "settings": {
-      "concurrancy": "",
-      "elapsed_time_metric": "",
-      "isElapsedTimeMetricChecked": false
-    },
-    "connections": [],
-    "tasks": [],
-    "triggers": {
-      "pipeline_id": "Fsh1DX-b7ODipupGMD3tO",
       "triggers_data": []
     }
   }
