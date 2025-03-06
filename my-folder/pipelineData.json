@@ -27,26 +27,6 @@
     ],
     "tasks": [
       {
-        "u_id": "-XJVxsdHiGiAK7-frYH8u",
-        "id": "2-1-1",
-        "name": "ReadJDBC",
-        "description": "",
-        "activity_state": "",
-        "timeout": "",
-        "retry": "",
-        "retry_interval": "",
-        "secure_input": false,
-        "secure_output": false,
-        "input_values": [
-          {
-            "conn_id": "",
-            "tbname": "",
-            "query": ""
-          }
-        ],
-        "user_properties": []
-      },
-      {
         "u_id": "br4vNv0OUEGKei8kIVAMf",
         "id": "3-1",
         "name": "Filter",
@@ -83,6 +63,26 @@
           {
             "conn_id": "",
             "tbname": ""
+          }
+        ],
+        "user_properties": []
+      },
+      {
+        "u_id": "7NVCk15xp-gCv1XJvflFv",
+        "id": "2-1-1",
+        "name": " ReadJDBC copy(1) ",
+        "description": "",
+        "activity_state": "",
+        "timeout": "",
+        "retry": "",
+        "retry_interval": "",
+        "secure_input": false,
+        "secure_output": false,
+        "input_values": [
+          {
+            "conn_id": "2",
+            "tbname": "2",
+            "query": "2"
           }
         ],
         "user_properties": []
