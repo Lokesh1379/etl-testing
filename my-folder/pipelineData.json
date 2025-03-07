@@ -88,9 +88,8 @@
         "user_properties": []
       },
       {
-        "u_id": "j5imftYT6KxXQ2u0_fc3k",
-        "id": "2-1-1",
-        "name": " ReadJDBC copy(1) ",
+        "name": "Add Column",
+        "u_id": "Gn9vTABrPQK0JvCJE4bOx",
         "description": "",
         "activity_state": "",
         "timeout": "",
@@ -100,12 +99,10 @@
         "secure_output": false,
         "input_values": [
           {
-            "conn_id": "",
-            "tbname": "",
-            "query": ""
+            "column_name": "ew",
+            "value": "23"
           }
-        ],
-        "user_properties": []
+        ]
       }
     ],
     "triggers": {
