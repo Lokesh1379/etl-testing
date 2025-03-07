@@ -9,8 +9,8 @@
         "icon": "svgIcons[0]",
         "imgpath": "/images/sidebar/filter.png",
         "yamlPath": "/path/to/filter/sample.yaml",
-        "x": 327.4716284012235,
-        "y": 167.77781902681218,
+        "x": 278.64983570262643,
+        "y": 142.7071687221272,
         "uniqueId": "br4vNv0OUEGKei8kIVAMf",
         "u_id": "LvNG87bIsRQaKowPJ2Ygz"
       },
@@ -27,7 +27,7 @@
       },
       {
         "id": "2-1-1",
-        "name": " ReadJDBC ",
+        "name": "ReadJDBC",
         "type": "read io",
         "connection_type": "JDBC",
         "yamlPath": "/path/to/IOConnectors/ReadIO/sample.yaml",
@@ -38,11 +38,6 @@
         "u_id": "JGDJaGbxABWzeTtjoCe2j"
       }
     ],
-    "run_type": ""
-  },
-  {
-    "id": "Fsh1DX-b7ODipupGMD3tO",
-    "job_nodes": [],
     "run_type": ""
   }
 ]
