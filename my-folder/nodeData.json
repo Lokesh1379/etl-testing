@@ -9,8 +9,8 @@
         "icon": "svgIcons[0]",
         "imgpath": "/images/sidebar/filter.png",
         "yamlPath": "/path/to/filter/sample.yaml",
-        "x": 278.64983570262643,
-        "y": 142.7071687221272,
+        "x": 219.64983570262643,
+        "y": 127.7071687221272,
         "uniqueId": "br4vNv0OUEGKei8kIVAMf",
         "u_id": "LvNG87bIsRQaKowPJ2Ygz"
       },
@@ -20,8 +20,8 @@
         "type": "write io",
         "imgpath": "/images/sidebar/writejdbc.png",
         "yamlPath": "/path/to/IOConnectors/WriteIO/sample.yaml",
-        "x": 426.02527323108086,
-        "y": 66.10867959760427,
+        "x": 380.02527323108086,
+        "y": 51.108679597604265,
         "uniqueId": "VQQyPmxxf5ghsjtL4AO-9",
         "u_id": "lkCuIgGxN75QzqivmQkN5"
       },
@@ -32,10 +32,22 @@
         "connection_type": "JDBC",
         "yamlPath": "/path/to/IOConnectors/ReadIO/sample.yaml",
         "imgpath": "/images/sidebar/readjdbc1.png",
-        "x": 153.75009388535818,
-        "y": 78.60358436106361,
+        "x": 122.75009388535818,
+        "y": 41.60358436106361,
         "uniqueId": "7NVCk15xp-gCv1XJvflFv",
         "u_id": "JGDJaGbxABWzeTtjoCe2j"
+      },
+      {
+        "id": "2-1-1",
+        "name": "ReadJDBC",
+        "type": "read io",
+        "connection_type": "JDBC",
+        "yamlPath": "/path/to/IOConnectors/ReadIO/sample.yaml",
+        "imgpath": "/images/sidebar/readjdbc1.png",
+        "x": 417.109375,
+        "y": 131.5,
+        "uniqueId": "j5imftYT6KxXQ2u0_fc3k",
+        "u_id": "eNhHnyCexFyo8AVRrwE0j"
       }
     ],
     "run_type": ""
