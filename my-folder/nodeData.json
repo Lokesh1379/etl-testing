@@ -41,24 +41,6 @@
     "run_type": ""
   },
   {
-    "id": "xFh8ucUGdKG9pUAcwZjdW",
-    "job_nodes": [
-      {
-        "id": "2-1-1",
-        "name": "ReadJDBC",
-        "type": "read io",
-        "connection_type": "JDBC",
-        "yamlPath": "/path/to/IOConnectors/ReadIO/sample.yaml",
-        "imgpath": "/images/sidebar/readjdbc1.png",
-        "x": 192.109375,
-        "y": 52.5,
-        "uniqueId": "OueB--ES79M6I2Le2RrLF",
-        "u_id": "VepZXFCA3XVO_5fLEuGxu"
-      }
-    ],
-    "run_type": ""
-  },
-  {
     "id": "Fsh1DX-b7ODipupGMD3tO",
     "job_nodes": [],
     "run_type": ""
