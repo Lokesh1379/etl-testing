@@ -68,9 +68,8 @@
         "user_properties": []
       },
       {
+        "name": " ReadJDBC ",
         "u_id": "7NVCk15xp-gCv1XJvflFv",
-        "id": "2-1-1",
-        "name": " ReadJDBC copy(1) ",
         "description": "",
         "activity_state": "",
         "timeout": "",
@@ -84,8 +83,7 @@
             "tbname": "2",
             "query": "2"
           }
-        ],
-        "user_properties": []
+        ]
       }
     ],
     "triggers": {
