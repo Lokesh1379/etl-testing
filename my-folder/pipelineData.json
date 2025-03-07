@@ -86,6 +86,26 @@
           }
         ],
         "user_properties": []
+      },
+      {
+        "u_id": "j5imftYT6KxXQ2u0_fc3k",
+        "id": "2-1-1",
+        "name": " ReadJDBC copy(1) ",
+        "description": "",
+        "activity_state": "",
+        "timeout": "",
+        "retry": "",
+        "retry_interval": "",
+        "secure_input": false,
+        "secure_output": false,
+        "input_values": [
+          {
+            "conn_id": "",
+            "tbname": "",
+            "query": ""
+          }
+        ],
+        "user_properties": []
       }
     ],
     "triggers": {
