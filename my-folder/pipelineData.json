@@ -1,7 +1,7 @@
 [
   {
     "id": "ePcaqHvz6tx9xDknnx8_E",
-    "job_name": "fromgit",
+    "job_name": "git main branch",
     "run_type": "",
     "global_properties": [],
     "variables": [],
@@ -68,8 +68,9 @@
         "user_properties": []
       },
       {
-        "name": " ReadJDBC ",
         "u_id": "7NVCk15xp-gCv1XJvflFv",
+        "id": "2-1-1",
+        "name": " ReadJDBC copy(1) ",
         "description": "",
         "activity_state": "",
         "timeout": "",
@@ -83,29 +84,12 @@
             "tbname": "2",
             "query": "2"
           }
-        ]
+        ],
+        "user_properties": []
       }
     ],
     "triggers": {
       "pipeline_id": "ePcaqHvz6tx9xDknnx8_E",
-      "triggers_data": []
-    }
-  },
-  {
-    "id": "Fsh1DX-b7ODipupGMD3tO",
-    "job_name": "Pipeline 2",
-    "run_type": "",
-    "global_properties": [],
-    "variables": [],
-    "settings": {
-      "concurrancy": "",
-      "elapsed_time_metric": "",
-      "isElapsedTimeMetricChecked": false
-    },
-    "connections": [],
-    "tasks": [],
-    "triggers": {
-      "pipeline_id": "Fsh1DX-b7ODipupGMD3tO",
       "triggers_data": []
     }
   }
