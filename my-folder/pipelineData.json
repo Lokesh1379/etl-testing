@@ -105,7 +105,28 @@
       "isElapsedTimeMetricChecked": false
     },
     "connections": [],
-    "tasks": [],
+    "tasks": [
+      {
+        "u_id": "OueB--ES79M6I2Le2RrLF",
+        "id": "2-1-1",
+        "name": "ReadJDBC",
+        "description": "",
+        "activity_state": "",
+        "timeout": "",
+        "retry": "",
+        "retry_interval": "",
+        "secure_input": false,
+        "secure_output": false,
+        "input_values": [
+          {
+            "conn_id": "",
+            "tbname": "",
+            "query": ""
+          }
+        ],
+        "user_properties": []
+      }
+    ],
     "triggers": {
       "pipeline_id": "xFh8ucUGdKG9pUAcwZjdW",
       "triggers_data": []
