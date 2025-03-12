@@ -3,18 +3,6 @@
     "id": "ePcaqHvz6tx9xDknnx8_E",
     "job_nodes": [
       {
-        "id": "3-1",
-        "name": "Filter",
-        "type": "default",
-        "icon": "svgIcons[0]",
-        "imgpath": "/images/sidebar/filter.png",
-        "yamlPath": "/path/to/filter/sample.yaml",
-        "x": 227.64983570262643,
-        "y": 135.7071687221272,
-        "uniqueId": "br4vNv0OUEGKei8kIVAMf",
-        "u_id": "LvNG87bIsRQaKowPJ2Ygz"
-      },
-      {
         "id": "2-2-1",
         "name": "WriteJDBC",
         "type": "write io",
