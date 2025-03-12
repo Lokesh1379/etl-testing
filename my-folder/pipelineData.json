@@ -27,28 +27,6 @@
     ],
     "tasks": [
       {
-        "u_id": "br4vNv0OUEGKei8kIVAMf",
-        "id": "3-1",
-        "name": "Filter",
-        "description": "",
-        "activity_state": "",
-        "timeout": "",
-        "retry": "",
-        "retry_interval": "",
-        "secure_input": false,
-        "secure_output": false,
-        "input_values": [
-          {
-            "username": "",
-            "password": "",
-            "port number": "",
-            "database": "",
-            "terms": ""
-          }
-        ],
-        "user_properties": []
-      },
-      {
         "u_id": "VQQyPmxxf5ghsjtL4AO-9",
         "id": "2-2-1",
         "name": "WriteJDBC",
