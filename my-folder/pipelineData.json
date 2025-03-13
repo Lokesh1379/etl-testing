@@ -12,73 +12,65 @@
     },
     "connections": [
       {
-        "conn_id": "eS3VqAopldEwGCGXV-S56",
-        "name": "JDBC connection",
+        "conn_id": "68yO0OJ2USBwH3s7b4cM8",
+        "name": "sdsdsd",
         "id": 1,
-        "input_items": [
-          {
-            "url": "https://dev.tourdeals.co.in/",
-            "username": "loki1379",
-            "password": "Loki@1379",
-            "database": "jobportal"
-          }
-        ]
+        "url": "https://dev.tourdeals.co.in/",
+        "username": "loki1379",
+        "password": "Loki@369",
+        "database": "jobportal"
       }
     ],
     "tasks": [
       {
-        "u_id": "VQQyPmxxf5ghsjtL4AO-9",
-        "id": "2-2-1",
         "name": "WriteJDBC",
-        "description": "",
-        "activity_state": "",
-        "timeout": "",
-        "retry": "",
-        "retry_interval": "",
-        "secure_input": false,
-        "secure_output": false,
-        "input_values": [
+        "u_id": "VQQyPmxxf5ghsjtL4AO-9",
+        "description": "des",
+        "activity_state": "Activated",
+        "timeout": "3",
+        "retry": "3",
+        "retry_interval": "3",
+        "secure_input": true,
+        "secure_output": true,
+        "input_items": [
           {
-            "conn_id": "",
-            "tbname": ""
+            "conn_id": "1",
+            "tbname": "emp"
           }
-        ],
-        "user_properties": []
+        ]
       },
       {
-        "u_id": "7NVCk15xp-gCv1XJvflFv",
-        "id": "2-1-1",
         "name": " ReadJDBC copy(1) ",
-        "description": "",
-        "activity_state": "",
-        "timeout": "",
-        "retry": "",
-        "retry_interval": "",
-        "secure_input": false,
-        "secure_output": false,
-        "input_values": [
+        "u_id": "7NVCk15xp-gCv1XJvflFv",
+        "description": "des",
+        "activity_state": "Activated",
+        "timeout": "1",
+        "retry": "1",
+        "retry_interval": "1",
+        "secure_input": true,
+        "secure_output": true,
+        "input_items": [
           {
-            "conn_id": "2",
-            "tbname": "2",
-            "query": "2"
+            "conn_id": "1",
+            "tbname": "emp",
+            "query": "select * from emp"
           }
-        ],
-        "user_properties": []
+        ]
       },
       {
         "name": "Add Column",
         "u_id": "Gn9vTABrPQK0JvCJE4bOx",
-        "description": "",
-        "activity_state": "",
-        "timeout": "",
-        "retry": "",
-        "retry_interval": "",
-        "secure_input": false,
-        "secure_output": false,
-        "input_values": [
+        "description": "des",
+        "activity_state": "Activated",
+        "timeout": "3",
+        "retry": "3",
+        "retry_interval": "3",
+        "secure_input": true,
+        "secure_output": true,
+        "input_items": [
           {
-            "column_name": "ew",
-            "value": "23"
+            "column_name": "Emp",
+            "value": "Shiva"
           }
         ]
       }
