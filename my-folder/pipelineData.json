@@ -1,7 +1,7 @@
 [
   {
-    "id": "ePcaqHvz6tx9xDknnx8_E",
-    "job_name": "git main branch",
+    "id": "YDYaYnHSUhtWXCR_sXiw8",
+    "job_name": "Pipeline 1",
     "run_type": "",
     "global_properties": [],
     "variables": [],
@@ -10,73 +10,72 @@
       "elapsed_time_metric": "",
       "isElapsedTimeMetricChecked": false
     },
-    "connections": [
-      {
-        "conn_id": "68yO0OJ2USBwH3s7b4cM8",
-        "name": "sdsdsd",
-        "id": 1,
-        "url": "https://dev.tourdeals.co.in/",
-        "username": "loki1379",
-        "password": "Loki@369",
-        "database": "jobportal"
-      }
-    ],
+    "connections": [],
     "tasks": [
       {
-        "name": "WriteJDBC",
-        "u_id": "VQQyPmxxf5ghsjtL4AO-9",
-        "description": "des",
-        "activity_state": "Activated",
-        "timeout": "3",
-        "retry": "3",
-        "retry_interval": "3",
-        "secure_input": true,
-        "secure_output": true,
+        "u_id": "eAfuTqVrVoyazcK4otm1n",
+        "id": "2-1-1",
+        "name": "ReadJDBC",
+        "description": "",
+        "activity_state": "",
+        "timeout": "",
+        "retry": "",
+        "retry_interval": "",
+        "secure_input": false,
+        "secure_output": false,
         "input_items": [
           {
-            "conn_id": "1",
-            "tbname": "emp"
+            "conn_id": "",
+            "tbname": "",
+            "query": ""
           }
-        ]
+        ],
+        "user_properties": [],
+        "isSkipped": false
       },
       {
-        "name": " ReadJDBC ",
-        "u_id": "7NVCk15xp-gCv1XJvflFv",
-        "description": "des",
-        "activity_state": "Activated",
-        "timeout": "1",
-        "retry": "1",
-        "retry_interval": "1",
-        "secure_input": true,
-        "secure_output": true,
-        "input_items": [
-          {
-            "conn_id": "1",
-            "tbname": "emp",
-            "query": "select * from emp"
-          }
-        ]
-      },
-      {
+        "u_id": "StP5kUh_Ab5YLEK3KApeA",
+        "id": "3-25",
         "name": "Add Column",
-        "u_id": "Gn9vTABrPQK0JvCJE4bOx",
-        "description": "des",
-        "activity_state": "Activated",
-        "timeout": "3",
-        "retry": "3",
-        "retry_interval": "3",
-        "secure_input": true,
-        "secure_output": true,
+        "description": "",
+        "activity_state": "",
+        "timeout": "",
+        "retry": "",
+        "retry_interval": "",
+        "secure_input": false,
+        "secure_output": false,
         "input_items": [
           {
-            "column_name": "Emp",
-            "value": "Shiva"
+            "column_name": "",
+            "value": ""
           }
-        ]
+        ],
+        "user_properties": [],
+        "isSkipped": false
+      },
+      {
+        "u_id": "hqzsrw3sTqMcGUnVotUgo",
+        "id": "2-2-1",
+        "name": "WriteJDBC",
+        "description": "",
+        "activity_state": "",
+        "timeout": "",
+        "retry": "",
+        "retry_interval": "",
+        "secure_input": false,
+        "secure_output": false,
+        "input_items": [
+          {
+            "conn_id": "",
+            "tbname": ""
+          }
+        ],
+        "user_properties": [],
+        "isSkipped": false
       }
     ],
     "triggers": {
-      "pipeline_id": "ePcaqHvz6tx9xDknnx8_E",
+      "pipeline_id": "YDYaYnHSUhtWXCR_sXiw8",
       "triggers_data": []
     }
   }
