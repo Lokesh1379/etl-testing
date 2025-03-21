@@ -1,7 +1,239 @@
 [
   {
-    "id": "YDYaYnHSUhtWXCR_sXiw8",
+    "id": "_cLTsYsSWeVzrIABMn7sU",
     "job_name": "Pipeline 1",
+    "run_type": "SPARK Runner",
+    "global_properties": [],
+    "variables": [],
+    "settings": {
+      "concurrancy": "",
+      "elapsed_time_metric": "",
+      "isElapsedTimeMetricChecked": false
+    },
+    "connections": [
+      {
+        "conn_id": 9275,
+        "name": "JDBC connection",
+        "id": 1,
+        "url": "https://dev.tourdeals.co.in/",
+        "username": "Lokesh",
+        "password": "Tanu@1999",
+        "database": "jobportal"
+      }
+    ],
+    "tasks": [
+      {
+        "name": "ReadJDBC",
+        "u_id": "N0RnsRmN77cA-vHDW0LMa",
+        "description": "des",
+        "activity_state": "Activated",
+        "timeout": "4",
+        "retry": "4",
+        "retry_interval": "4",
+        "secure_input": true,
+        "secure_output": true,
+        "input_items": [
+          {
+            "conn_id": 9275,
+            "tbname": "emp",
+            "query": "select * from emp"
+          }
+        ],
+        "isSkipped": false
+      },
+      {
+        "name": "SQL",
+        "u_id": "rtbLLqgRyOzfqX3_ciP7_",
+        "description": "des",
+        "activity_state": "Activated",
+        "timeout": "5",
+        "retry": "5",
+        "retry_interval": "5",
+        "secure_input": true,
+        "secure_output": true,
+        "input_items": [
+          {
+            "query": "select * from table 2"
+          }
+        ],
+        "isSkipped": false
+      },
+      {
+        "name": "WriteJDBC",
+        "u_id": "qeYpCHEjT1ISpNDzwXzfp",
+        "description": "des",
+        "activity_state": "Activated",
+        "timeout": "5",
+        "retry": "5",
+        "retry_interval": "5",
+        "secure_input": true,
+        "secure_output": true,
+        "input_items": [
+          {
+            "conn_id": 9275,
+            "tbname": "table2"
+          }
+        ],
+        "isSkipped": false
+      }
+    ],
+    "triggers": {
+      "pipeline_id": "_cLTsYsSWeVzrIABMn7sU",
+      "triggers_data": []
+    }
+  },
+  {
+    "id": "DVofmZQBCor1mBKcYd4xu",
+    "job_name": "JOINER",
+    "run_type": "SQL Runner",
+    "global_properties": [],
+    "variables": [],
+    "settings": {
+      "concurrancy": "",
+      "elapsed_time_metric": "",
+      "isElapsedTimeMetricChecked": false
+    },
+    "connections": [],
+    "tasks": [
+      {
+        "name": "ReadJDBC",
+        "u_id": "yLAd0bBwp8JGQ2hFFwBF0",
+        "description": "des",
+        "activity_state": "Activated",
+        "timeout": "4",
+        "retry": "4",
+        "retry_interval": "4",
+        "secure_input": true,
+        "secure_output": true,
+        "input_items": [
+          {
+            "conn_id": 9275,
+            "tbname": "table2",
+            "query": "select * from table 2"
+          }
+        ],
+        "isSkipped": false
+      },
+      {
+        "name": "Joiner",
+        "u_id": "RhkPavYfmuLa4WE-nq-z5",
+        "description": "des",
+        "activity_state": "Activated",
+        "timeout": "4",
+        "retry": "4",
+        "retry_interval": "4",
+        "secure_input": true,
+        "secure_output": true,
+        "input_items": [
+          {
+            "join_type": "left join",
+            "left_table": "table2",
+            "right_table": "table3",
+            "join_condition": "no condition"
+          }
+        ],
+        "isSkipped": false
+      },
+      {
+        "name": "WriteJDBC",
+        "u_id": "beowtiaYB7ckbNI14ocA4",
+        "description": "des",
+        "activity_state": "Activated",
+        "timeout": "5",
+        "retry": "5",
+        "retry_interval": "5",
+        "secure_input": true,
+        "secure_output": true,
+        "input_items": [
+          {
+            "conn_id": 9275,
+            "tbname": "table1"
+          }
+        ],
+        "isSkipped": false
+      }
+    ],
+    "triggers": {
+      "pipeline_id": "DVofmZQBCor1mBKcYd4xu",
+      "triggers_data": []
+    }
+  },
+  {
+    "id": "6mKOiSNK6GVfE5rjcQ7DS",
+    "job_name": "DISTINCT",
+    "run_type": "FLINK Runner",
+    "global_properties": [],
+    "variables": [],
+    "settings": {
+      "concurrancy": "",
+      "elapsed_time_metric": "",
+      "isElapsedTimeMetricChecked": false
+    },
+    "connections": [],
+    "tasks": [
+      {
+        "name": "ReadJDBC",
+        "u_id": "UcZv6C3-bpHZudevLZ7WO",
+        "description": "des",
+        "activity_state": "Activated",
+        "timeout": "5",
+        "retry": "5",
+        "retry_interval": "5",
+        "secure_input": true,
+        "secure_output": true,
+        "input_items": [
+          {
+            "conn_id": 9275,
+            "tbname": "table2",
+            "query": "select * from table 2"
+          }
+        ],
+        "isSkipped": false
+      },
+      {
+        "name": "Distinct",
+        "u_id": "TGdZXXyHsNA0_i3eygA8F",
+        "description": "des",
+        "activity_state": "Activated",
+        "timeout": "5",
+        "retry": "5",
+        "retry_interval": "5",
+        "secure_input": true,
+        "secure_output": true,
+        "input_items": [
+          {
+            "distinct_columns": "sss"
+          }
+        ],
+        "isSkipped": false
+      },
+      {
+        "name": "WriteJDBC",
+        "u_id": "ZjIHp0nbmYh1qSUu0SNJH",
+        "description": "des",
+        "activity_state": "Activated",
+        "timeout": "4",
+        "retry": "4",
+        "retry_interval": "4",
+        "secure_input": true,
+        "secure_output": true,
+        "input_items": [
+          {
+            "conn_id": 9275,
+            "tbname": "table2"
+          }
+        ],
+        "isSkipped": false
+      }
+    ],
+    "triggers": {
+      "pipeline_id": "6mKOiSNK6GVfE5rjcQ7DS",
+      "triggers_data": []
+    }
+  },
+  {
+    "id": "aBRj5JEJhwce03YtBsJko",
+    "job_name": "VALIDATION",
     "run_type": "",
     "global_properties": [],
     "variables": [],
@@ -13,69 +245,380 @@
     "connections": [],
     "tasks": [
       {
-        "u_id": "eAfuTqVrVoyazcK4otm1n",
-        "id": "2-1-1",
         "name": "ReadJDBC",
-        "description": "",
-        "activity_state": "",
-        "timeout": "",
-        "retry": "",
-        "retry_interval": "",
-        "secure_input": false,
-        "secure_output": false,
+        "u_id": "J1x6CGu31u8-wNL9lwEBa",
+        "description": "des",
+        "activity_state": "Activated",
+        "timeout": "3",
+        "retry": "3",
+        "retry_interval": "3",
+        "secure_input": true,
+        "secure_output": true,
         "input_items": [
           {
-            "conn_id": "",
-            "tbname": "",
-            "query": ""
+            "conn_id": 9275,
+            "tbname": "table2",
+            "query": "select * from table 2"
           }
         ],
-        "user_properties": [],
         "isSkipped": false
       },
       {
-        "u_id": "StP5kUh_Ab5YLEK3KApeA",
-        "id": "3-25",
-        "name": "Add Column",
-        "description": "",
-        "activity_state": "",
-        "timeout": "",
-        "retry": "",
-        "retry_interval": "",
-        "secure_input": false,
-        "secure_output": false,
+        "name": "Validation",
+        "u_id": "buvJkYk_vRJ_eRajO4uQM",
+        "description": "des",
+        "activity_state": "Activated",
+        "timeout": "6",
+        "retry": "6",
+        "retry_interval": "6",
+        "secure_input": true,
+        "secure_output": true,
         "input_items": [
           {
-            "column_name": "",
-            "value": ""
+            "csv_path": "folder/csvfiles/datafile.json"
           }
         ],
-        "user_properties": [],
         "isSkipped": false
       },
       {
-        "u_id": "hqzsrw3sTqMcGUnVotUgo",
-        "id": "2-2-1",
         "name": "WriteJDBC",
-        "description": "",
-        "activity_state": "",
-        "timeout": "",
-        "retry": "",
-        "retry_interval": "",
-        "secure_input": false,
-        "secure_output": false,
+        "u_id": "fQyalZT6san-wtcadllD8",
+        "description": "des",
+        "activity_state": "Activated",
+        "timeout": "5",
+        "retry": "5",
+        "retry_interval": "5",
+        "secure_input": true,
+        "secure_output": true,
         "input_items": [
           {
-            "conn_id": "",
-            "tbname": ""
+            "conn_id": 9275,
+            "tbname": "table2"
           }
         ],
-        "user_properties": [],
         "isSkipped": false
       }
     ],
     "triggers": {
-      "pipeline_id": "YDYaYnHSUhtWXCR_sXiw8",
+      "pipeline_id": "aBRj5JEJhwce03YtBsJko",
+      "triggers_data": []
+    }
+  },
+  {
+    "id": "82S8pGJzkpg7Ghi1tsQJf",
+    "job_name": "ADD COLUMN",
+    "run_type": "",
+    "global_properties": [],
+    "variables": [],
+    "settings": {
+      "concurrancy": "",
+      "elapsed_time_metric": "",
+      "isElapsedTimeMetricChecked": false
+    },
+    "connections": [],
+    "tasks": [
+      {
+        "name": "ReadJDBC",
+        "u_id": "RS0eA-KVhIcTw1E3_-Ci3",
+        "description": "des",
+        "activity_state": "Activated",
+        "timeout": "5",
+        "retry": "5",
+        "retry_interval": "4",
+        "secure_input": true,
+        "secure_output": true,
+        "input_items": [
+          {
+            "conn_id": 9275,
+            "tbname": "table2",
+            "query": "select * from table 2"
+          }
+        ],
+        "isSkipped": false
+      },
+      {
+        "name": "Add Column",
+        "u_id": "sjHoOxLo6OscwsjuhLgyC",
+        "description": "des",
+        "activity_state": "Activated",
+        "timeout": "8",
+        "retry": "8",
+        "retry_interval": "8",
+        "secure_input": true,
+        "secure_output": true,
+        "input_items": [
+          {
+            "column_name": "Name",
+            "value": "shiva"
+          }
+        ],
+        "isSkipped": false
+      },
+      {
+        "name": "WriteJDBC",
+        "u_id": "MUVkGmzmEKusj1oseMsD2",
+        "description": "des",
+        "activity_state": "Activated",
+        "timeout": "4",
+        "retry": "4",
+        "retry_interval": "4",
+        "secure_input": true,
+        "secure_output": true,
+        "input_items": [
+          {
+            "conn_id": 9275,
+            "tbname": "table2"
+          }
+        ],
+        "isSkipped": false
+      }
+    ],
+    "triggers": {
+      "pipeline_id": "82S8pGJzkpg7Ghi1tsQJf",
+      "triggers_data": []
+    }
+  },
+  {
+    "id": "VAWGjayfBpJ0FW27fi-O-",
+    "job_name": "SEQUENCE GENERATOR",
+    "run_type": "FLINK Runner",
+    "global_properties": [],
+    "variables": [],
+    "settings": {
+      "concurrancy": "",
+      "elapsed_time_metric": "",
+      "isElapsedTimeMetricChecked": false
+    },
+    "connections": [],
+    "tasks": [
+      {
+        "name": "ReadJDBC",
+        "u_id": "YDjqdPXqPQAOn-XlHLCLr",
+        "description": "des",
+        "activity_state": "Activated",
+        "timeout": "5",
+        "retry": "5",
+        "retry_interval": "5",
+        "secure_input": true,
+        "secure_output": true,
+        "input_items": [
+          {
+            "conn_id": 9275,
+            "tbname": "table2",
+            "query": "select * from table 2"
+          }
+        ],
+        "isSkipped": false
+      },
+      {
+        "name": "Sequence Generator",
+        "u_id": "m91et80tnJtaptqoVXU2G",
+        "description": "des",
+        "activity_state": "Activated",
+        "timeout": "3",
+        "retry": "3",
+        "retry_interval": "3",
+        "secure_input": true,
+        "secure_output": true,
+        "input_items": [
+          {
+            "column_name": "Marks",
+            "start_value": "1",
+            "increment": "5"
+          }
+        ],
+        "isSkipped": false
+      },
+      {
+        "name": "WriteJDBC",
+        "u_id": "4i6tYivT6uf353mFRm8jP",
+        "description": "des",
+        "activity_state": "Activated",
+        "timeout": "3",
+        "retry": "3",
+        "retry_interval": "3",
+        "secure_input": true,
+        "secure_output": true,
+        "input_items": [
+          {
+            "conn_id": 9275,
+            "tbname": "table2"
+          }
+        ],
+        "isSkipped": false
+      }
+    ],
+    "triggers": {
+      "pipeline_id": "VAWGjayfBpJ0FW27fi-O-",
+      "triggers_data": []
+    }
+  },
+  {
+    "id": "G112lf0Iz7y3I0c_b75vp",
+    "job_name": "RANK",
+    "run_type": "",
+    "global_properties": [],
+    "variables": [],
+    "settings": {
+      "concurrancy": "",
+      "elapsed_time_metric": "",
+      "isElapsedTimeMetricChecked": false
+    },
+    "connections": [],
+    "tasks": [
+      {
+        "name": "ReadJDBC",
+        "u_id": "9JB7FlTrzhAIEN7KtvF4-",
+        "description": "des",
+        "activity_state": "Activated",
+        "timeout": "5",
+        "retry": "5",
+        "retry_interval": "5",
+        "secure_input": true,
+        "secure_output": true,
+        "input_items": [
+          {
+            "conn_id": 9275,
+            "tbname": "table2",
+            "query": "select * from table 2"
+          }
+        ],
+        "isSkipped": false
+      },
+      {
+        "name": "Rank",
+        "u_id": "RPF5imDIS2HAJQ1JWCaNX",
+        "description": "des",
+        "activity_state": "Activated",
+        "timeout": "3",
+        "retry": "2",
+        "retry_interval": "3",
+        "secure_input": true,
+        "secure_output": true,
+        "input_items": [
+          {
+            "rank_column": "Emp",
+            "order": "Emp",
+            "partition_by": "Emp",
+            "rank": "Emp"
+          }
+        ],
+        "isSkipped": false
+      },
+      {
+        "name": "WriteJDBC",
+        "u_id": "_kdEIM4jINaA-z74otMCX",
+        "description": "des",
+        "activity_state": "Activated",
+        "timeout": "4",
+        "retry": "4",
+        "retry_interval": "4",
+        "secure_input": true,
+        "secure_output": true,
+        "input_items": [
+          {
+            "conn_id": 9275,
+            "tbname": "Emp"
+          }
+        ],
+        "isSkipped": false
+      }
+    ],
+    "triggers": {
+      "pipeline_id": "G112lf0Iz7y3I0c_b75vp",
+      "triggers_data": []
+    }
+  },
+  {
+    "id": "nyFaf69VjYaXOdperwSoA",
+    "job_name": "APPROX COUNT",
+    "run_type": "SQL Runner",
+    "global_properties": [],
+    "variables": [],
+    "settings": {
+      "concurrancy": "",
+      "elapsed_time_metric": "",
+      "isElapsedTimeMetricChecked": false
+    },
+    "connections": [],
+    "tasks": [
+      {
+        "name": "ReadJDBC",
+        "u_id": "aWDmytKJ8tFvLyBDUt5NO",
+        "description": "des",
+        "activity_state": "Activated",
+        "timeout": "5",
+        "retry": "5",
+        "retry_interval": "5",
+        "secure_input": true,
+        "secure_output": true,
+        "input_items": [
+          {
+            "conn_id": 9275,
+            "tbname": "table2",
+            "query": "select * from table 2"
+          }
+        ],
+        "isSkipped": false
+      },
+      {
+        "name": "Approx Count",
+        "u_id": "98PWxkZAYF4jfQf7vnoAD",
+        "description": "des",
+        "activity_state": "Activated",
+        "timeout": "5",
+        "retry": "5",
+        "retry_interval": "5",
+        "secure_input": true,
+        "secure_output": true,
+        "input_items": [
+          {
+            "column_name": "Marks",
+            "approximate": "2",
+            "output_column": "Total Marks"
+          }
+        ],
+        "isSkipped": false
+      },
+      {
+        "name": "WriteJDBC",
+        "u_id": "iJ60_A8kqMTM8HBHk0S-8",
+        "description": "des",
+        "activity_state": "Activated",
+        "timeout": "5",
+        "retry": "5",
+        "retry_interval": "5",
+        "secure_input": true,
+        "secure_output": true,
+        "input_items": [
+          {
+            "conn_id": 9275,
+            "tbname": "table2"
+          }
+        ],
+        "isSkipped": false
+      }
+    ],
+    "triggers": {
+      "pipeline_id": "nyFaf69VjYaXOdperwSoA",
+      "triggers_data": []
+    }
+  },
+  {
+    "id": "ngEU03FP7XgDkmK5HfZ1q",
+    "job_name": "Pipeline 9",
+    "run_type": "",
+    "global_properties": [],
+    "variables": [],
+    "settings": {
+      "concurrancy": "",
+      "elapsed_time_metric": "",
+      "isElapsedTimeMetricChecked": false
+    },
+    "connections": [],
+    "tasks": [],
+    "triggers": {
+      "pipeline_id": "ngEU03FP7XgDkmK5HfZ1q",
       "triggers_data": []
     }
   }
