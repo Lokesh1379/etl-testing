@@ -1,7 +1,7 @@
 [
   {
-    "id": "MRDjjrlylHWoDcvihC-Fr",
-    "job_name": "Pipeline 1",
+    "id": "vX-6VUQoAtcLtfDVQ389M",
+    "job_name": "d",
     "run_type": "",
     "global_properties": [],
     "variables": [],
@@ -13,25 +13,7 @@
     "connections": [],
     "tasks": [],
     "triggers": {
-      "pipeline_id": "MRDjjrlylHWoDcvihC-Fr",
-      "triggers_data": []
-    }
-  },
-  {
-    "id": "kywdAf-HW3W0awS9uypmq",
-    "job_name": "Pipeline 2",
-    "run_type": "",
-    "global_properties": [],
-    "variables": [],
-    "settings": {
-      "concurrancy": "",
-      "elapsed_time_metric": "",
-      "isElapsedTimeMetricChecked": false
-    },
-    "connections": [],
-    "tasks": [],
-    "triggers": {
-      "pipeline_id": "kywdAf-HW3W0awS9uypmq",
+      "pipeline_id": "vX-6VUQoAtcLtfDVQ389M",
       "triggers_data": []
     }
   }
