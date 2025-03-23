@@ -1,1 +1,17 @@
-[]
+[
+  {
+    "id": "wD91PxEmgsBaKN2WqgFiF",
+    "type": "folder",
+    "displayName": "New Folder",
+    "open": false,
+    "children": [
+      {
+        "id": "emE-z7xy1YYOdtftKHA86",
+        "type": "folder",
+        "displayName": "New Folder",
+        "open": false,
+        "children": []
+      }
+    ]
+  }
+]
