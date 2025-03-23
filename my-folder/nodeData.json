@@ -1,7 +1,21 @@
 [
   {
-    "id": "vX-6VUQoAtcLtfDVQ389M",
-    "job_nodes": [],
+    "id": "jInJ76bWlf14GIe3mvlpH",
+    "job_nodes": [
+      {
+        "id": "2-1-1",
+        "name": "ReadJDBC",
+        "type": "read io",
+        "connection_type": "JDBC",
+        "yamlPath": "/path/to/IOConnectors/ReadIO/readjdbc.yaml",
+        "imgpath": "/images/sidebar/readjdbc1.png",
+        "x": 217.109375,
+        "y": 87.5,
+        "uniqueId": "_G4TT_lepVGpDwf-Tgyp3",
+        "u_id": "-Y6KkF-_CrdD8nUH-SkHH",
+        "isSkipped": false
+      }
+    ],
     "run_type": ""
   }
 ]
