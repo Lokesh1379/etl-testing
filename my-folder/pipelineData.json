@@ -1,7 +1,7 @@
 [
   {
-    "id": "vX-6VUQoAtcLtfDVQ389M",
-    "job_name": "d",
+    "id": "jInJ76bWlf14GIe3mvlpH",
+    "job_name": "Pipeline 1",
     "run_type": "",
     "global_properties": [],
     "variables": [],
@@ -11,9 +11,31 @@
       "isElapsedTimeMetricChecked": false
     },
     "connections": [],
-    "tasks": [],
+    "tasks": [
+      {
+        "u_id": "_G4TT_lepVGpDwf-Tgyp3",
+        "id": "2-1-1",
+        "name": "ReadJDBC",
+        "description": "",
+        "activity_state": "",
+        "timeout": "",
+        "retry": "",
+        "retry_interval": "",
+        "secure_input": false,
+        "secure_output": false,
+        "input_items": [
+          {
+            "conn_id": "",
+            "tbname": "",
+            "query": ""
+          }
+        ],
+        "user_properties": [],
+        "isSkipped": false
+      }
+    ],
     "triggers": {
-      "pipeline_id": "vX-6VUQoAtcLtfDVQ389M",
+      "pipeline_id": "jInJ76bWlf14GIe3mvlpH",
       "triggers_data": []
     }
   }
