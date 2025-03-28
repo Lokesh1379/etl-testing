@@ -1,0 +1,31 @@
+[
+  {
+    "pipeline_id": "8594b3c1-bc6f-b292-7fdc-3fb0bd285a64",
+    "triggers": [
+      {
+        "u_id": "e407d2a1-cee1-c4d9-e797-e3f9682fed4e",
+        "edit": true,
+        "pipeline_name": "Pipeline 1",
+        "cron_expression": "2 2 2 2 2",
+        "trigger_name": "Every Month Trigger",
+        "pipeline_params": [],
+        "start_date": "2025-03-28T11:35",
+        "end_date": "2029-12-31T23:59"
+      }
+    ]
+  },
+  {
+    "pipeline_id": "d663a60e-d783-7f0b-2d7c-97021416ccbe",
+    "triggers": [
+      {
+        "u_id": "6a15ec46-ac06-67e5-b073-a479c577de48",
+        "edit": true,
+        "pipeline_name": "Pipeline 2",
+        "cron_expression": "5 5 5 5 5",
+        "trigger_name": "Friday Trigger",
+        "pipeline_params": [],
+        "start_date": "2025-03-29T11:03"
+      }
+    ]
+  }
+]
