@@ -1,41 +1,39 @@
 [
   {
-    "id": "jInJ76bWlf14GIe3mvlpH",
+    "id": "8594b3c1-bc6f-b292-7fdc-3fb0bd285a64",
     "job_name": "Pipeline 1",
     "run_type": "",
-    "global_properties": [],
-    "variables": [],
+    "Global_variables": [],
+    "Pipeline_variables": [],
     "settings": {
       "concurrancy": "",
       "elapsed_time_metric": "",
       "isElapsedTimeMetricChecked": false
     },
     "connections": [],
-    "tasks": [
-      {
-        "u_id": "_G4TT_lepVGpDwf-Tgyp3",
-        "id": "2-1-1",
-        "name": "ReadJDBC",
-        "description": "",
-        "activity_state": "",
-        "timeout": "",
-        "retry": "",
-        "retry_interval": "",
-        "secure_input": false,
-        "secure_output": false,
-        "input_items": [
-          {
-            "conn_id": "",
-            "tbname": "",
-            "query": ""
-          }
-        ],
-        "user_properties": [],
-        "isSkipped": false
-      }
-    ],
+    "tasks": [],
+    "isStarted": false,
     "triggers": {
-      "pipeline_id": "jInJ76bWlf14GIe3mvlpH",
+      "pipeline_id": "8594b3c1-bc6f-b292-7fdc-3fb0bd285a64",
+      "triggers_data": []
+    }
+  },
+  {
+    "id": "d663a60e-d783-7f0b-2d7c-97021416ccbe",
+    "job_name": "Pipeline 2",
+    "run_type": "",
+    "Global_variables": [],
+    "Pipeline_variables": [],
+    "settings": {
+      "concurrancy": "",
+      "elapsed_time_metric": "",
+      "isElapsedTimeMetricChecked": false
+    },
+    "connections": [],
+    "tasks": [],
+    "isStarted": false,
+    "triggers": {
+      "pipeline_id": "d663a60e-d783-7f0b-2d7c-97021416ccbe",
       "triggers_data": []
     }
   }
