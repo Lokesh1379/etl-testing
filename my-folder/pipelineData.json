@@ -1,6 +1,6 @@
 [
   {
-    "id": "8594b3c1-bc6f-b292-7fdc-3fb0bd285a64",
+    "id": "5e3145ad-676e-a7e1-9ca4-f0a17e35e1d5",
     "job_name": "Pipeline 1",
     "run_type": "",
     "Global_variables": [],
@@ -11,29 +11,32 @@
       "isElapsedTimeMetricChecked": false
     },
     "connections": [],
-    "tasks": [],
+    "tasks": [
+      {
+        "u_id": "d9c0dc22-060d-108b-43f6-657dead7405b",
+        "id": "2-1-1",
+        "opr_name": "JDBC_reader",
+        "name": "ReadJDBC",
+        "description": "",
+        "activity_state": false,
+        "timeout": "",
+        "retry": "",
+        "retry_interval": "",
+        "secure_input": false,
+        "secure_output": false,
+        "input_items": [
+          {
+            "conn_id": "",
+            "tbname": "",
+            "query": ""
+          }
+        ],
+        "user_properties": []
+      }
+    ],
     "isStarted": false,
     "triggers": {
-      "pipeline_id": "8594b3c1-bc6f-b292-7fdc-3fb0bd285a64",
-      "triggers_data": []
-    }
-  },
-  {
-    "id": "d663a60e-d783-7f0b-2d7c-97021416ccbe",
-    "job_name": "Pipeline 2",
-    "run_type": "",
-    "Global_variables": [],
-    "Pipeline_variables": [],
-    "settings": {
-      "concurrancy": "",
-      "elapsed_time_metric": "",
-      "isElapsedTimeMetricChecked": false
-    },
-    "connections": [],
-    "tasks": [],
-    "isStarted": false,
-    "triggers": {
-      "pipeline_id": "d663a60e-d783-7f0b-2d7c-97021416ccbe",
+      "pipeline_id": "5e3145ad-676e-a7e1-9ca4-f0a17e35e1d5",
       "triggers_data": []
     }
   }
