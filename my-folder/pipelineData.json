@@ -1,8 +1,8 @@
 [
   {
     "id": "600816b0-d91d-5f56-8488-7296f06dae97",
-    "job_name": "Pipeline 1",
-    "run_type": "",
+    "job_name": "Adding Column",
+    "run_type": "sparkprocess",
     "Global_variables": [],
     "Pipeline_variables": [],
     "settings": {
@@ -99,7 +99,7 @@
   },
   {
     "id": "dc9cf526-f319-f204-c1e2-342ab6c39b82",
-    "job_name": "Pipeline 6",
+    "job_name": "Reading Data",
     "run_type": "sparkprocess",
     "Global_variables": [],
     "Pipeline_variables": [],
