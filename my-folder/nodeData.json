@@ -53,5 +53,25 @@
       }
     ],
     "run_type": ""
+  },
+  {
+    "id": "dc9cf526-f319-f204-c1e2-342ab6c39b82",
+    "job_nodes": [
+      {
+        "id": "2-1-1",
+        "name": "ReadJDBC",
+        "oprName": "JDBC_reader",
+        "type": "read io",
+        "connection_type": "JDBC",
+        "yamlPath": "/path/to/IOConnectors/ReadIO/readjdbc.yaml",
+        "imgpath": "/images/sidebar/readjdbc1.png",
+        "x": 229.9375,
+        "y": 39.5,
+        "uniqueId": "90167314-d554-ba9a-4753-e413a4432b75",
+        "u_id": "95ac1c32-45a3-757f-d2c7-3b81f60ecf55",
+        "activity_state": false
+      }
+    ],
+    "run_type": ""
   }
 ]
