@@ -89,6 +89,32 @@
         "dependency": [
           "31fb1a6f-381d-550f-f6af-4d5163c67e5d"
         ]
+      },
+      {
+        "u_id": "b6ac889a-3b31-ebc5-c518-c645b097d9f9",
+        "id": "3-15",
+        "opr_name": "filter",
+        "name": "Filter",
+        "description": "des",
+        "activity_state": false,
+        "timeout": "10",
+        "retry": "2",
+        "retry_interval": "2",
+        "secure_input": true,
+        "secure_output": true,
+        "input_items": [
+          {
+            "username": "candidate",
+            "password": "2",
+            "port number": "2",
+            "database": "add_col_new",
+            "terms": ""
+          }
+        ],
+        "user_properties": [],
+        "dependency": [
+          "d50cc7ce-f0fd-862b-7b7a-d2ca14aca1af"
+        ]
       }
     ],
     "isStarted": false,
