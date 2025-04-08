@@ -1,0 +1,82 @@
+[
+  {
+    "id": "59768b51-95cf-ba84-fd02-c9162888a497",
+    "edges": [
+      {
+        "source": "c76b74b5-7e72-423d-1019-ba6b9fc9d36e",
+        "sourceHandle": null,
+        "target": "1b2bc17e-3ab0-181e-6b68-674022a43ebd",
+        "targetHandle": null,
+        "id": "reactflow__edge-c76b74b5-7e72-423d-1019-ba6b9fc9d36e-1b2bc17e-3ab0-181e-6b68-674022a43ebd"
+      },
+      {
+        "source": "1b2bc17e-3ab0-181e-6b68-674022a43ebd",
+        "sourceHandle": null,
+        "target": "9235154d-b1b5-af1c-9d2b-929722eb52be",
+        "targetHandle": null,
+        "id": "reactflow__edge-1b2bc17e-3ab0-181e-6b68-674022a43ebd-9235154d-b1b5-af1c-9d2b-929722eb52be"
+      }
+    ]
+  },
+  {
+    "id": "600816b0-d91d-5f56-8488-7296f06dae97",
+    "edges": [
+      {
+        "source": "76172e69-c460-c96c-2c1f-f50acff16cbb",
+        "sourceHandle": null,
+        "target": "31fb1a6f-381d-550f-f6af-4d5163c67e5d",
+        "targetHandle": null,
+        "id": "reactflow__edge-76172e69-c460-c96c-2c1f-f50acff16cbb-31fb1a6f-381d-550f-f6af-4d5163c67e5d"
+      },
+      {
+        "source": "31fb1a6f-381d-550f-f6af-4d5163c67e5d",
+        "sourceHandle": null,
+        "target": "d50cc7ce-f0fd-862b-7b7a-d2ca14aca1af",
+        "targetHandle": null,
+        "id": "reactflow__edge-31fb1a6f-381d-550f-f6af-4d5163c67e5d-d50cc7ce-f0fd-862b-7b7a-d2ca14aca1af"
+      },
+      {
+        "source": "d50cc7ce-f0fd-862b-7b7a-d2ca14aca1af",
+        "sourceHandle": null,
+        "target": "b6ac889a-3b31-ebc5-c518-c645b097d9f9",
+        "targetHandle": null,
+        "id": "reactflow__edge-d50cc7ce-f0fd-862b-7b7a-d2ca14aca1af-b6ac889a-3b31-ebc5-c518-c645b097d9f9"
+      }
+    ]
+  },
+  {
+    "id": "3c335162-8b93-6fa5-e6c9-d8a283a8487e",
+    "edges": [
+      {
+        "source": "bcfa0714-f0f2-5ef4-9c2a-dac38ef49493",
+        "sourceHandle": null,
+        "target": "26d10746-e684-3a7a-e767-8572ca2e0100",
+        "targetHandle": null,
+        "id": "reactflow__edge-bcfa0714-f0f2-5ef4-9c2a-dac38ef49493-26d10746-e684-3a7a-e767-8572ca2e0100"
+      },
+      {
+        "source": "26d10746-e684-3a7a-e767-8572ca2e0100",
+        "sourceHandle": null,
+        "target": "e3ee3344-f0cb-8049-090b-a481a339f1e0",
+        "targetHandle": null,
+        "id": "reactflow__edge-26d10746-e684-3a7a-e767-8572ca2e0100-e3ee3344-f0cb-8049-090b-a481a339f1e0"
+      }
+    ]
+  },
+  {
+    "id": "a8a735f5-ee9d-3cdb-248b-ee2134ade99a",
+    "edges": []
+  },
+  {
+    "id": "03d7f532-2bd5-9dc0-bd6c-4665a4835fbf",
+    "edges": []
+  },
+  {
+    "id": "b6d161d3-5a46-90e1-e5a0-c620ad13b002",
+    "edges": []
+  },
+  {
+    "id": "dc9cf526-f319-f204-c1e2-342ab6c39b82",
+    "edges": []
+  }
+]
