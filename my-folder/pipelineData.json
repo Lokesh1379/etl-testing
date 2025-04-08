@@ -1,6 +1,6 @@
 [
   {
-    "id": "59768b51-95cf-ba84-fd02-c9162888a497",
+    "id": "600816b0-d91d-5f56-8488-7296f06dae97",
     "job_name": "Pipeline 1",
     "run_type": "",
     "Global_variables": [],
@@ -24,7 +24,7 @@
     ],
     "tasks": [
       {
-        "u_id": "c76b74b5-7e72-423d-1019-ba6b9fc9d36e",
+        "u_id": "76172e69-c460-c96c-2c1f-f50acff16cbb",
         "id": "2-1-1",
         "opr_name": "JDBC_reader",
         "name": "ReadJDBC",
@@ -45,7 +45,7 @@
         "user_properties": []
       },
       {
-        "u_id": "1b2bc17e-3ab0-181e-6b68-674022a43ebd",
+        "u_id": "31fb1a6f-381d-550f-f6af-4d5163c67e5d",
         "id": "3-1",
         "opr_name": "Add_column",
         "name": "Add Column",
@@ -64,11 +64,11 @@
         ],
         "user_properties": [],
         "dependency": [
-          "c76b74b5-7e72-423d-1019-ba6b9fc9d36e"
+          "76172e69-c460-c96c-2c1f-f50acff16cbb"
         ]
       },
       {
-        "u_id": "9235154d-b1b5-af1c-9d2b-929722eb52be",
+        "u_id": "d50cc7ce-f0fd-862b-7b7a-d2ca14aca1af",
         "id": "2-2-1",
         "opr_name": "JDBC_writer",
         "name": "WriteJDBC",
@@ -81,19 +81,19 @@
         "secure_output": true,
         "input_items": [
           {
-            "conn_id": 4423,
-            "tbname": "add_col_new"
+            "conn_id": "",
+            "tbname": ""
           }
         ],
         "user_properties": [],
         "dependency": [
-          "1b2bc17e-3ab0-181e-6b68-674022a43ebd"
+          "31fb1a6f-381d-550f-f6af-4d5163c67e5d"
         ]
       }
     ],
     "isStarted": false,
     "triggers": {
-      "pipeline_id": "59768b51-95cf-ba84-fd02-c9162888a497",
+      "pipeline_id": "600816b0-d91d-5f56-8488-7296f06dae97",
       "triggers_data": []
     }
   }
