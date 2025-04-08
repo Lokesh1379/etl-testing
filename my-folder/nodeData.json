@@ -50,6 +50,18 @@
         "uniqueId": "d50cc7ce-f0fd-862b-7b7a-d2ca14aca1af",
         "u_id": "dae79018-1fd1-f958-fec0-1923c3e913a5",
         "activity_state": false
+      },
+      {
+        "id": "3-15",
+        "name": "Filter",
+        "imgpath": "/images/sidebar/filter.png",
+        "oprName": "filter",
+        "yamlPath": "/path/to/transformations/filter.yaml",
+        "x": 704.8788996750445,
+        "y": 72.44425593010084,
+        "uniqueId": "b6ac889a-3b31-ebc5-c518-c645b097d9f9",
+        "u_id": "b39b39c8-3b7b-1229-a90b-e008f9558b43",
+        "activity_state": false
       }
     ],
     "run_type": ""
