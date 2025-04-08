@@ -50,63 +50,6 @@
         "uniqueId": "d50cc7ce-f0fd-862b-7b7a-d2ca14aca1af",
         "u_id": "dae79018-1fd1-f958-fec0-1923c3e913a5",
         "activity_state": false
-      },
-      {
-        "id": "3-15",
-        "name": "Filter",
-        "imgpath": "/images/sidebar/filter.png",
-        "oprName": "filter",
-        "yamlPath": "/path/to/transformations/filter.yaml",
-        "x": 704.8788996750445,
-        "y": 72.44425593010084,
-        "uniqueId": "b6ac889a-3b31-ebc5-c518-c645b097d9f9",
-        "u_id": "b39b39c8-3b7b-1229-a90b-e008f9558b43",
-        "activity_state": false
-      }
-    ],
-    "run_type": ""
-  },
-  {
-    "id": "3c335162-8b93-6fa5-e6c9-d8a283a8487e",
-    "job_nodes": [
-      {
-        "id": "2-1-1",
-        "name": "ReadJDBC",
-        "oprName": "JDBC_reader",
-        "type": "read io",
-        "connection_type": "JDBC",
-        "yamlPath": "/path/to/IOConnectors/ReadIO/readjdbc.yaml",
-        "imgpath": "/images/sidebar/readjdbc1.png",
-        "x": 189.109375,
-        "y": 73.5,
-        "uniqueId": "bcfa0714-f0f2-5ef4-9c2a-dac38ef49493",
-        "u_id": "5ebdbe2d-6668-f9da-3feb-f8b7e75784c0",
-        "activity_state": false
-      },
-      {
-        "id": "3-15",
-        "name": "Filter",
-        "imgpath": "/images/sidebar/filter.png",
-        "oprName": "filter",
-        "yamlPath": "/path/to/transformations/filter.yaml",
-        "x": 362.109375,
-        "y": 81.5,
-        "uniqueId": "26d10746-e684-3a7a-e767-8572ca2e0100",
-        "u_id": "3a9e5ca4-57db-7cd7-a1b8-703e46df2c46",
-        "activity_state": false
-      },
-      {
-        "id": "2-2-1",
-        "name": "WriteJDBC",
-        "type": "write io",
-        "oprName": "JDBC_writer",
-        "imgpath": "/images/sidebar/writejdbc.png",
-        "yamlPath": "/path/to/IOConnectors/WriteIO/writejdbc.yaml",
-        "x": 543.109375,
-        "y": 79.5,
-        "uniqueId": "e3ee3344-f0cb-8049-090b-a481a339f1e0",
-        "u_id": "1c8d0ca8-9f7d-7c34-fb2c-90dc69a2c6bf",
-        "activity_state": false
       }
     ],
     "run_type": ""
