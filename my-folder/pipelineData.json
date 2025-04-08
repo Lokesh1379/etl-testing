@@ -96,5 +96,57 @@
       "pipeline_id": "600816b0-d91d-5f56-8488-7296f06dae97",
       "triggers_data": []
     }
+  },
+  {
+    "id": "dc9cf526-f319-f204-c1e2-342ab6c39b82",
+    "job_name": "Pipeline 6",
+    "run_type": "sparkprocess",
+    "Global_variables": [],
+    "Pipeline_variables": [],
+    "settings": {
+      "concurrancy": "",
+      "elapsed_time_metric": "",
+      "isElapsedTimeMetricChecked": false
+    },
+    "connections": [
+      {
+        "connection_name": "JDBC connection",
+        "url": "jdbc:mysql://localhost:3306",
+        "username": "root",
+        "password": "root",
+        "database": "jobportal",
+        "provider": "MySQL",
+        "driver_path": "C:/Users/Dell/Downloads/mysql-connector-j-9.1.0.jar",
+        "conn_id": 4423
+      }
+    ],
+    "tasks": [
+      {
+        "u_id": "90167314-d554-ba9a-4753-e413a4432b75",
+        "id": "2-1-1",
+        "opr_name": "JDBC_reader",
+        "name": "ReadJDBC",
+        "description": "des",
+        "activity_state": false,
+        "timeout": "10",
+        "retry": "2",
+        "retry_interval": "2",
+        "secure_input": true,
+        "secure_output": true,
+        "input_items": [
+          {
+            "conn_id": 4423,
+            "tbname": "candidate",
+            "query": "SELECT * FROM EMP"
+          }
+        ],
+        "user_properties": []
+      }
+    ],
+    "isStarted": false,
+    "triggers": {
+      "pipeline_id": "dc9cf526-f319-f204-c1e2-342ab6c39b82",
+      "triggers_data": []
+    }
   }
 ]
