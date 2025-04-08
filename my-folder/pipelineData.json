@@ -122,5 +122,95 @@
       "pipeline_id": "600816b0-d91d-5f56-8488-7296f06dae97",
       "triggers_data": []
     }
+  },
+  {
+    "id": "3c335162-8b93-6fa5-e6c9-d8a283a8487e",
+    "job_name": "Pipeline 2",
+    "run_type": "",
+    "Global_variables": [],
+    "Pipeline_variables": [],
+    "settings": {
+      "concurrancy": "",
+      "elapsed_time_metric": "",
+      "isElapsedTimeMetricChecked": false
+    },
+    "connections": [],
+    "tasks": [
+      {
+        "u_id": "bcfa0714-f0f2-5ef4-9c2a-dac38ef49493",
+        "id": "2-1-1",
+        "opr_name": "JDBC_reader",
+        "name": "ReadJDBC",
+        "description": "",
+        "activity_state": false,
+        "timeout": "",
+        "retry": "",
+        "retry_interval": "",
+        "secure_input": false,
+        "secure_output": false,
+        "input_items": [
+          {
+            "conn_id": "",
+            "tbname": "",
+            "query": ""
+          }
+        ],
+        "user_properties": []
+      },
+      {
+        "u_id": "26d10746-e684-3a7a-e767-8572ca2e0100",
+        "id": "3-15",
+        "opr_name": "filter",
+        "name": "Filter",
+        "description": "",
+        "activity_state": false,
+        "timeout": "",
+        "retry": "",
+        "retry_interval": "",
+        "secure_input": false,
+        "secure_output": false,
+        "input_items": [
+          {
+            "username": "",
+            "password": "",
+            "port number": "",
+            "database": "",
+            "terms": ""
+          }
+        ],
+        "user_properties": [],
+        "dependency": [
+          "bcfa0714-f0f2-5ef4-9c2a-dac38ef49493"
+        ]
+      },
+      {
+        "u_id": "e3ee3344-f0cb-8049-090b-a481a339f1e0",
+        "id": "2-2-1",
+        "opr_name": "JDBC_writer",
+        "name": "WriteJDBC",
+        "description": "",
+        "activity_state": false,
+        "timeout": "",
+        "retry": "",
+        "retry_interval": "",
+        "secure_input": false,
+        "secure_output": false,
+        "input_items": [
+          {
+            "conn_id": "",
+            "tbname": ""
+          }
+        ],
+        "user_properties": [],
+        "dependency": [
+          "26d10746-e684-3a7a-e767-8572ca2e0100"
+        ]
+      }
+    ],
+    "isStarted": false,
+    "triggers": {
+      "pipeline_id": "3c335162-8b93-6fa5-e6c9-d8a283a8487e",
+      "triggers_data": []
+    }
   }
 ]
