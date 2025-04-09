@@ -20,6 +20,16 @@
         "provider": "MySQL",
         "driver_path": "C:/Users/Dell/Downloads/mysql-connector-j-9.1.0.jar",
         "conn_id": 4423
+      },
+      {
+        "connection_name": "JDBC connection",
+        "url": "jdbc:mysql://localhost:3306",
+        "username": "root",
+        "password": "root",
+        "database": "jobportal",
+        "provider": "MySQL",
+        "driver_path": "C:/Users/Dell/Downloads/mysql-connector-j-9.1.0.jar",
+        "conn_id": 2729
       }
     ],
     "tasks": [
@@ -37,7 +47,7 @@
         "secure_output": true,
         "input_items": [
           {
-            "conn_id": 4423,
+            "conn_id": 2729,
             "tbname": "candidate",
             "query": "SELECT * FROM CANDIDATE"
           }
@@ -81,8 +91,8 @@
         "secure_output": true,
         "input_items": [
           {
-            "conn_id": "",
-            "tbname": ""
+            "conn_id": 2729,
+            "tbname": "add_col_new"
           }
         ],
         "user_properties": [],
@@ -93,8 +103,13 @@
     ],
     "isStarted": false,
     "triggers": {
-      "pipeline_id": "600816b0-d91d-5f56-8488-7296f06dae97",
-      "triggers_data": []
+      "u_id": "0ddc1af1-0fc9-9a23-b48d-76bda833cb2f",
+      "edit": true,
+      "pipeline_name": "Pipeline 1",
+      "cron_expression": "2 2 2 2 2",
+      "trigger_name": "Every Day",
+      "pipeline_params": [],
+      "start_date": "2025-04-09T09:38"
     }
   }
 ]
