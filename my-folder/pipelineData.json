@@ -85,8 +85,8 @@
         "description": "des",
         "activity_state": false,
         "timeout": "10",
-        "retry": "2",
-        "retry_interval": "2",
+        "retry": "10",
+        "retry_interval": "9",
         "secure_input": true,
         "secure_output": true,
         "input_items": [
