@@ -1,6 +1,6 @@
 [
   {
-    "id": "e56b07fd-89b0-af80-2522-fb63bffbda4e",
+    "id": "65670b49-f940-dd6e-d5c4-e85697a1c92b",
     "job_name": "Pipeline 1",
     "run_type": "spark",
     "Global_variables": [],
@@ -24,7 +24,7 @@
     ],
     "tasks": [
       {
-        "u_id": "1b2ad88f-8830-57ca-c4cb-5b1adaaaa220",
+        "u_id": "1f428740-03ed-2b83-3882-d18603675a05",
         "id": "2-1-1",
         "opr_name": "JDBC_reader",
         "name": "ReadJDBC",
@@ -45,7 +45,7 @@
         "user_properties": []
       },
       {
-        "u_id": "dee7f611-6648-1d6c-97d1-07f2c62db847",
+        "u_id": "9c63302f-25b5-2a4f-e1d9-dea5b81edc3a",
         "id": "3-1",
         "opr_name": "Add_column",
         "name": "Add Column",
@@ -64,11 +64,11 @@
         ],
         "user_properties": [],
         "dependency": [
-          "1b2ad88f-8830-57ca-c4cb-5b1adaaaa220"
+          "1f428740-03ed-2b83-3882-d18603675a05"
         ]
       },
       {
-        "u_id": "4336a130-2cb7-beea-051b-39e8d720217d",
+        "u_id": "255aa9b8-417c-6e8f-1f53-bb68ca79efd4",
         "id": "2-2-1",
         "opr_name": "JDBC_writer",
         "name": "WriteJDBC",
@@ -87,7 +87,7 @@
         ],
         "user_properties": [],
         "dependency": [
-          "dee7f611-6648-1d6c-97d1-07f2c62db847"
+          "9c63302f-25b5-2a4f-e1d9-dea5b81edc3a"
         ]
       }
     ],
