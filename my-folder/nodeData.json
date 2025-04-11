@@ -10,7 +10,7 @@
     "run_type": ""
   },
   {
-    "id": "600816b0-d91d-5f56-8488-7296f06dae97",
+    "id": "f2855799-25a9-8a01-d6eb-2cb7e09a0436",
     "job_nodes": [
       {
         "id": "2-1-1",
@@ -20,10 +20,10 @@
         "connection_type": "JDBC",
         "yamlPath": "/path/to/IOConnectors/ReadIO/readjdbc.yaml",
         "imgpath": "/images/sidebar/readjdbc1.png",
-        "x": 178.109375,
-        "y": 75.5,
-        "uniqueId": "76172e69-c460-c96c-2c1f-f50acff16cbb",
-        "u_id": "01d595ed-f656-9d32-4d55-ceddccbe54f5",
+        "x": 113.109375,
+        "y": 52.5,
+        "uniqueId": "38d1f31e-267a-51e3-1463-29a65145a689",
+        "u_id": "2b6bec87-fd93-e8f9-afde-e48e0f2f4c3e",
         "activity_state": false
       },
       {
@@ -32,10 +32,10 @@
         "oprName": "Add_column",
         "imgpath": "/images/sidebar/column.png",
         "yamlPath": "/path/to/transformations/addcolumn.yaml",
-        "x": 354.109375,
-        "y": 86.5,
-        "uniqueId": "31fb1a6f-381d-550f-f6af-4d5163c67e5d",
-        "u_id": "79eb5b33-12a2-e2cf-623f-f8876eda4a5c",
+        "x": 274.109375,
+        "y": 51.5,
+        "uniqueId": "b102eb8c-9e3a-536e-fea1-a27b42a6fe89",
+        "u_id": "86188686-a91d-4945-fcd5-c2b3004aa7a7",
         "activity_state": false
       },
       {
@@ -45,30 +45,10 @@
         "oprName": "JDBC_writer",
         "imgpath": "/images/sidebar/writejdbc.png",
         "yamlPath": "/path/to/IOConnectors/WriteIO/writejdbc.yaml",
-        "x": 531.109375,
-        "y": 85.5,
-        "uniqueId": "d50cc7ce-f0fd-862b-7b7a-d2ca14aca1af",
-        "u_id": "dae79018-1fd1-f958-fec0-1923c3e913a5",
-        "activity_state": false
-      }
-    ],
-    "run_type": ""
-  },
-  {
-    "id": "dc9cf526-f319-f204-c1e2-342ab6c39b82",
-    "job_nodes": [
-      {
-        "id": "2-1-1",
-        "name": "ReadJDBC",
-        "oprName": "JDBC_reader",
-        "type": "read io",
-        "connection_type": "JDBC",
-        "yamlPath": "/path/to/IOConnectors/ReadIO/readjdbc.yaml",
-        "imgpath": "/images/sidebar/readjdbc1.png",
-        "x": 229.9375,
-        "y": 39.5,
-        "uniqueId": "90167314-d554-ba9a-4753-e413a4432b75",
-        "u_id": "95ac1c32-45a3-757f-d2c7-3b81f60ecf55",
+        "x": 441.109375,
+        "y": 49.5,
+        "uniqueId": "870380d2-4ffb-fba2-0ea2-8246c138a994",
+        "u_id": "c58eb435-d842-9bac-fdef-15bfcddaf98a",
         "activity_state": false
       }
     ],
