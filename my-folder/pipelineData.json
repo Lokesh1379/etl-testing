@@ -2,7 +2,7 @@
   {
     "id": "f7948848-1e4e-d6ba-cf5b-eda51654063f",
     "job_name": "Pipeline 1",
-    "run_type": "spark",
+    "run_type": "",
     "Global_variables": [],
     "Pipeline_variables": [],
     "settings": {
