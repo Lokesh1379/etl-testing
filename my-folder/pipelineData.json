@@ -1,6 +1,6 @@
 [
   {
-    "id": "b8cbee20-b771-1328-159b-0feffcccda24",
+    "id": "61f97bee-03ff-bfdf-77fd-66a55dd57e9f",
     "job_name": "Pipeline 1",
     "run_type": "spark",
     "Global_variables": [],
@@ -24,7 +24,7 @@
     ],
     "tasks": [
       {
-        "u_id": "21700319-685d-af98-26f0-6295eea8a6e5",
+        "u_id": "f4e125b1-070f-4f1a-3859-3b79177aea90",
         "id": "2-1-1",
         "opr_name": "JDBC_reader",
         "name": "ReadJDBC",
@@ -45,7 +45,7 @@
         "user_properties": []
       },
       {
-        "u_id": "8e26f040-99fc-752c-5313-20aface5df7e",
+        "u_id": "087ef5e8-96cc-17e5-4917-8ef3d1f80d8a",
         "id": "3-1",
         "opr_name": "Add_column",
         "name": "Add Column",
@@ -64,11 +64,11 @@
         ],
         "user_properties": [],
         "dependency": [
-          "21700319-685d-af98-26f0-6295eea8a6e5"
+          "f4e125b1-070f-4f1a-3859-3b79177aea90"
         ]
       },
       {
-        "u_id": "f958ac75-8668-8d6a-0252-d6654f56888e",
+        "u_id": "57b41677-4e02-60da-8a40-05368b2ba967",
         "id": "2-2-1",
         "opr_name": "JDBC_writer",
         "name": "WriteJDBC",
@@ -82,12 +82,12 @@
         "input_items": [
           {
             "conn_id": 1410,
-            "tbname": "add_col_new"
+            "tbname": "add_col_new2"
           }
         ],
         "user_properties": [],
         "dependency": [
-          "8e26f040-99fc-752c-5313-20aface5df7e"
+          "087ef5e8-96cc-17e5-4917-8ef3d1f80d8a"
         ]
       }
     ],
