@@ -30,6 +30,16 @@
         "provider": "MySQL",
         "driver_path": "com.mysql.driver",
         "conn_id": 4734
+      },
+      {
+        "connection_name": "JDBC connection3",
+        "url": "jdbc:mysql://34.57.144.120:3306",
+        "username": "remote_user",
+        "password": "spark",
+        "database": "jobportal",
+        "provider": "MySQL",
+        "driver_path": "/home/amruthabs122/mysql-connector-j-8.0.28.jar",
+        "conn_id": 3855
       }
     ],
     "tasks": [
@@ -47,7 +57,7 @@
         "secure_output": true,
         "input_items": [
           {
-            "conn_id": 4423,
+            "conn_id": 3855,
             "tbname": "candidate",
             "query": "SELECT * FROM CANDIDATE"
           }
@@ -91,7 +101,7 @@
         "secure_output": true,
         "input_items": [
           {
-            "conn_id": 4734,
+            "conn_id": 3855,
             "tbname": "add_col_new"
           }
         ],
