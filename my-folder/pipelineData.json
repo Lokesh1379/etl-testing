@@ -1,6 +1,6 @@
 [
   {
-    "id": "8fb2b06c-08e3-daa7-9f2e-42c5f57920d2",
+    "id": "b8cbee20-b771-1328-159b-0feffcccda24",
     "job_name": "Pipeline 1",
     "run_type": "spark",
     "Global_variables": [],
@@ -12,19 +12,19 @@
     },
     "connections": [
       {
-        "connection_name": "JDBCConnector",
+        "connection_name": "JDBC connection",
         "url": "jdbc:mysql://34.57.144.120:3306",
         "username": "remote_user",
         "password": "spark",
         "database": "jobportal",
         "provider": "MySQL",
         "mysql_connector": "/home/amruthabs122/mysql-connector-j-8.0.28.jar",
-        "conn_id": 8169
+        "conn_id": 1410
       }
     ],
     "tasks": [
       {
-        "u_id": "4a3e6684-84d6-60aa-962e-dca9f5ba9c81",
+        "u_id": "21700319-685d-af98-26f0-6295eea8a6e5",
         "id": "2-1-1",
         "opr_name": "JDBC_reader",
         "name": "ReadJDBC",
@@ -37,7 +37,7 @@
         "secure_output": true,
         "input_items": [
           {
-            "conn_id": 8169,
+            "conn_id": 1410,
             "tbname": "candidate",
             "query": "select * from candidate"
           }
@@ -45,7 +45,7 @@
         "user_properties": []
       },
       {
-        "u_id": "e55a09b3-855d-6d5c-89a7-f75e7b48f38d",
+        "u_id": "8e26f040-99fc-752c-5313-20aface5df7e",
         "id": "3-1",
         "opr_name": "Add_column",
         "name": "Add Column",
@@ -64,11 +64,11 @@
         ],
         "user_properties": [],
         "dependency": [
-          "4a3e6684-84d6-60aa-962e-dca9f5ba9c81"
+          "21700319-685d-af98-26f0-6295eea8a6e5"
         ]
       },
       {
-        "u_id": "81f82ddd-0746-c051-2b54-dac00892b973",
+        "u_id": "f958ac75-8668-8d6a-0252-d6654f56888e",
         "id": "2-2-1",
         "opr_name": "JDBC_writer",
         "name": "WriteJDBC",
@@ -81,13 +81,13 @@
         "secure_output": true,
         "input_items": [
           {
-            "conn_id": 8169,
-            "tbname": "add_new_column"
+            "conn_id": 1410,
+            "tbname": "add_col_new"
           }
         ],
         "user_properties": [],
         "dependency": [
-          "e55a09b3-855d-6d5c-89a7-f75e7b48f38d"
+          "8e26f040-99fc-752c-5313-20aface5df7e"
         ]
       }
     ],
