@@ -109,6 +109,27 @@
         "dependency": [
           "31fb1a6f-381d-550f-f6af-4d5163c67e5d"
         ]
+      },
+      {
+        "u_id": "715f6324-e4cb-6a95-f215-c5420d80deb3",
+        "id": "3-2",
+        "opr_name": "",
+        "name": "Aggregator",
+        "description": "",
+        "activity_state": false,
+        "timeout": "",
+        "retry": "",
+        "retry_interval": "",
+        "secure_input": false,
+        "secure_output": false,
+        "input_items": [
+          {
+            "group_by": "",
+            "coulumn_name": "",
+            "function": ""
+          }
+        ],
+        "user_properties": []
       }
     ],
     "isStarted": false,
@@ -168,5 +189,113 @@
       "pipeline_id": "dc9cf526-f319-f204-c1e2-342ab6c39b82",
       "triggers_data": []
     }
+  },
+  {
+    "id": "ae8970f4-40cc-7bfe-6f34-c7680142dd0e",
+    "job_name": "Pipeline 1",
+    "run_type": "spark",
+    "Global_variables": [],
+    "Pipeline_variables": [],
+    "settings": {
+      "concurrancy": "",
+      "elapsed_time_metric": "",
+      "isElapsedTimeMetricChecked": false
+    },
+    "connections": [],
+    "tasks": [
+      {
+        "u_id": "68a7cbab-4390-547a-cb43-6c5e55ba15b9",
+        "id": "2-1-1",
+        "opr_name": "JDBC_reader",
+        "name": "ReadJDBC",
+        "description": "",
+        "activity_state": false,
+        "timeout": "",
+        "retry": "",
+        "retry_interval": "",
+        "secure_input": false,
+        "secure_output": false,
+        "input_items": [
+          {
+            "conn_id": "",
+            "tbname": "",
+            "query": ""
+          }
+        ],
+        "user_properties": []
+      },
+      {
+        "u_id": "6fc6de82-2532-d3a1-ad6d-962ec0719016",
+        "id": "2-2-1",
+        "opr_name": "JDBC_writer",
+        "name": "WriteJDBC",
+        "description": "",
+        "activity_state": false,
+        "timeout": "",
+        "retry": "",
+        "retry_interval": "",
+        "secure_input": false,
+        "secure_output": false,
+        "input_items": [
+          {
+            "conn_id": "",
+            "tbname": ""
+          }
+        ],
+        "user_properties": [],
+        "dependency": [
+          "5564b54b-a895-62bf-a3a0-e5bc2310fd02"
+        ]
+      },
+      {
+        "u_id": "3ddfbad3-bb54-6d93-50f7-375799415622",
+        "id": "3-1",
+        "opr_name": "Add_column",
+        "name": "Add Column",
+        "description": "",
+        "activity_state": false,
+        "timeout": "",
+        "retry": "",
+        "retry_interval": "",
+        "secure_input": false,
+        "secure_output": false,
+        "input_items": [
+          {
+            "column_name": "",
+            "value": ""
+          }
+        ],
+        "user_properties": [],
+        "dependency": [
+          "68a7cbab-4390-547a-cb43-6c5e55ba15b9"
+        ]
+      },
+      {
+        "u_id": "5564b54b-a895-62bf-a3a0-e5bc2310fd02",
+        "id": "3-2",
+        "opr_name": "",
+        "name": "Aggregator",
+        "description": "",
+        "activity_state": false,
+        "timeout": "",
+        "retry": "",
+        "retry_interval": "",
+        "secure_input": false,
+        "secure_output": false,
+        "input_items": [
+          {
+            "group_by": "",
+            "coulumn_name": "",
+            "function": ""
+          }
+        ],
+        "user_properties": [],
+        "dependency": [
+          "3ddfbad3-bb54-6d93-50f7-375799415622"
+        ]
+      }
+    ],
+    "isStarted": true,
+    "triggers": {}
   }
 ]
