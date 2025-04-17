@@ -50,17 +50,6 @@
         "uniqueId": "d50cc7ce-f0fd-862b-7b7a-d2ca14aca1af",
         "u_id": "dae79018-1fd1-f958-fec0-1923c3e913a5",
         "activity_state": false
-      },
-      {
-        "id": "3-2",
-        "name": "Aggregator",
-        "imgpath": "/images/sidebar/aggregator.png",
-        "yamlPath": "/path/to/transformations/aggregator.yaml",
-        "x": 335.6875,
-        "y": 217.16666412353516,
-        "uniqueId": "715f6324-e4cb-6a95-f215-c5420d80deb3",
-        "u_id": "d7876611-f331-a7b7-e7c1-a9d134c1ef49",
-        "activity_state": false
       }
     ],
     "run_type": ""
@@ -80,62 +69,6 @@
         "y": 39.5,
         "uniqueId": "90167314-d554-ba9a-4753-e413a4432b75",
         "u_id": "95ac1c32-45a3-757f-d2c7-3b81f60ecf55",
-        "activity_state": false
-      }
-    ],
-    "run_type": ""
-  },
-  {
-    "id": "ae8970f4-40cc-7bfe-6f34-c7680142dd0e",
-    "job_nodes": [
-      {
-        "id": "2-1-1",
-        "name": "ReadJDBC",
-        "oprName": "JDBC_reader",
-        "type": "read io",
-        "connection_type": "JDBC",
-        "yamlPath": "/path/to/IOConnectors/ReadIO/readjdbc.yaml",
-        "imgpath": "/images/sidebar/readjdbc1.png",
-        "x": 172.6875,
-        "y": 51.166664123535156,
-        "uniqueId": "68a7cbab-4390-547a-cb43-6c5e55ba15b9",
-        "u_id": "e10531f2-f643-a2d1-5c5c-ebb0939455b4",
-        "activity_state": false
-      },
-      {
-        "id": "2-2-1",
-        "name": "WriteJDBC",
-        "type": "write io",
-        "oprName": "JDBC_writer",
-        "imgpath": "/images/sidebar/writejdbc.png",
-        "yamlPath": "/path/to/IOConnectors/WriteIO/writejdbc.yaml",
-        "x": 252.6875,
-        "y": 352.16666412353516,
-        "uniqueId": "6fc6de82-2532-d3a1-ad6d-962ec0719016",
-        "u_id": "5cf584e5-6ec1-8dfb-6b3c-36bd3d53acd7",
-        "activity_state": false
-      },
-      {
-        "id": "3-1",
-        "name": "Add Column",
-        "oprName": "Add_column",
-        "imgpath": "/images/sidebar/column.png",
-        "yamlPath": "/path/to/transformations/addcolumn.yaml",
-        "x": 278.6875,
-        "y": 152.16666412353516,
-        "uniqueId": "3ddfbad3-bb54-6d93-50f7-375799415622",
-        "u_id": "291f0722-b342-cc60-f2bd-aa9d200179ec",
-        "activity_state": false
-      },
-      {
-        "id": "3-2",
-        "name": "Aggregator",
-        "imgpath": "/images/sidebar/aggregator.png",
-        "yamlPath": "/path/to/transformations/aggregator.yaml",
-        "x": 365.6875,
-        "y": 228.16666412353516,
-        "uniqueId": "5564b54b-a895-62bf-a3a0-e5bc2310fd02",
-        "u_id": "7e4576f2-2002-3c70-8fab-fb1cd090e65d",
         "activity_state": false
       }
     ],
