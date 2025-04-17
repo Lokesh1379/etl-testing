@@ -78,31 +78,5 @@
   {
     "id": "dc9cf526-f319-f204-c1e2-342ab6c39b82",
     "edges": []
-  },
-  {
-    "id": "ae8970f4-40cc-7bfe-6f34-c7680142dd0e",
-    "edges": [
-      {
-        "source": "68a7cbab-4390-547a-cb43-6c5e55ba15b9",
-        "sourceHandle": null,
-        "target": "3ddfbad3-bb54-6d93-50f7-375799415622",
-        "targetHandle": null,
-        "id": "reactflow__edge-68a7cbab-4390-547a-cb43-6c5e55ba15b9-3ddfbad3-bb54-6d93-50f7-375799415622"
-      },
-      {
-        "source": "3ddfbad3-bb54-6d93-50f7-375799415622",
-        "sourceHandle": null,
-        "target": "5564b54b-a895-62bf-a3a0-e5bc2310fd02",
-        "targetHandle": null,
-        "id": "reactflow__edge-3ddfbad3-bb54-6d93-50f7-375799415622-5564b54b-a895-62bf-a3a0-e5bc2310fd02"
-      },
-      {
-        "source": "5564b54b-a895-62bf-a3a0-e5bc2310fd02",
-        "sourceHandle": null,
-        "target": "6fc6de82-2532-d3a1-ad6d-962ec0719016",
-        "targetHandle": null,
-        "id": "reactflow__edge-5564b54b-a895-62bf-a3a0-e5bc2310fd02-6fc6de82-2532-d3a1-ad6d-962ec0719016"
-      }
-    ]
   }
 ]
