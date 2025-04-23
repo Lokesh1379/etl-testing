@@ -2,7 +2,7 @@
   {
     "id": "600816b0-d91d-5f56-8488-7296f06dae97",
     "job_name": "Adding Column",
-    "run_type": "sparkprocess",
+    "run_type": "spark",
     "Global_variables": [],
     "Pipeline_variables": [],
     "settings": {
