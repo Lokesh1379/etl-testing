@@ -98,5 +98,50 @@
       }
     ],
     "run_type": ""
+  },
+  {
+    "id": "0e7f75be-c622-452b-1545-b7a378646f38",
+    "job_nodes": [
+      {
+        "id": "1-1",
+        "name": "ReadJDBC",
+        "oprName": "JDBC_reader",
+        "type": "read io",
+        "connection_type": "JDBC",
+        "yamlPath": "/path/to/IOConnectors/ReadIO/JDBC_reader.yaml",
+        "imgpath": "/images/sidebar/JDBC_reader.png",
+        "x": 155.109375,
+        "y": 89.5,
+        "uniqueId": "2348f7d3-b4fb-917f-cb9c-61ce24f4123e",
+        "u_id": "a3d93d4a-4041-2b2e-88d8-5e0f44aa180e",
+        "activity_state": false
+      },
+      {
+        "id": "3-1",
+        "name": "Add Column",
+        "oprName": "Add_column",
+        "imgpath": "/images/sidebar/Add_column.png",
+        "yamlPath": "/path/to/transformations/Add_column.yaml",
+        "x": 335.109375,
+        "y": 80.5,
+        "uniqueId": "019c4b09-b054-3450-e95b-137770e5f0c6",
+        "u_id": "6b1a354e-7660-ff75-1c5a-58d2e90cba16",
+        "activity_state": false
+      },
+      {
+        "id": "2-1",
+        "name": "WriteJDBC",
+        "type": "write io",
+        "oprName": "JDBC_writer",
+        "imgpath": "/images/sidebar/JDBC_writer.png",
+        "yamlPath": "/path/to/IOConnectors/WriteIO/JDBC_writer.yaml",
+        "x": 526.109375,
+        "y": 83.5,
+        "uniqueId": "91cb51ce-b983-3d29-e885-7691afd7e31a",
+        "u_id": "00c62a24-e71e-790e-d7a5-4ed49a56a51c",
+        "activity_state": false
+      }
+    ],
+    "run_type": ""
   }
 ]
