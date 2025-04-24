@@ -1,7 +1,7 @@
 [
   {
-    "id": "cc967505-24c1-6104-eddd-3e7d48804452",
-    "job_name": "Add Column",
+    "id": "aa7f1883-3500-66fa-5d09-402cd4d75c7e",
+    "job_name": "Add column",
     "run_type": "spark",
     "Global_variables": [],
     "Pipeline_variables": [],
@@ -12,19 +12,19 @@
     },
     "connections": [
       {
-        "connection_name": "JDBC",
+        "connection_name": "JDBC connection",
         "url": "jdbc:mysql://34.57.144.120:3306",
         "username": "remote_user",
         "password": "spark",
-        "database": "jobportal",
+        "database": "jdbc:mysql://34.57.144.120:3306",
         "provider": "MySQL",
         "mysql_connector": "/home/amruthabs122/mysql-connector-j-8.0.28.jar",
-        "conn_id": 1138
+        "conn_id": 8771
       }
     ],
     "tasks": [
       {
-        "u_id": "5cb215b3-b751-34ea-0ffe-30dd602bb7d1",
+        "u_id": "50f92a71-3969-2d01-0f15-d21561dab1a5",
         "id": "1-1",
         "opr_name": "JDBC_reader",
         "name": "ReadJDBC",
@@ -37,7 +37,7 @@
         "secure_output": true,
         "input_items": [
           {
-            "conn_id": 1138,
+            "conn_id": 8771,
             "tbname": "candidate",
             "query": "select * from candidate"
           }
@@ -45,7 +45,7 @@
         "user_properties": []
       },
       {
-        "u_id": "48d35623-358e-56af-3bb8-0d7cac0accbe",
+        "u_id": "8a597ace-b8ee-b69e-9d51-ed9dbc1549f7",
         "id": "3-1",
         "opr_name": "Add_column",
         "name": "Add Column",
@@ -64,11 +64,11 @@
         ],
         "user_properties": [],
         "dependency": [
-          "5cb215b3-b751-34ea-0ffe-30dd602bb7d1"
+          "50f92a71-3969-2d01-0f15-d21561dab1a5"
         ]
       },
       {
-        "u_id": "0feec25f-3102-e4b9-0639-631e00b0b0c4",
+        "u_id": "d41eb6bb-85f0-3e4e-b242-c411f0c35535",
         "id": "2-1",
         "opr_name": "JDBC_writer",
         "name": "WriteJDBC",
@@ -81,13 +81,13 @@
         "secure_output": true,
         "input_items": [
           {
-            "conn_id": 1138,
-            "tbname": "add_new_column"
+            "conn_id": 8771,
+            "tbname": "candidate"
           }
         ],
         "user_properties": [],
         "dependency": [
-          "48d35623-358e-56af-3bb8-0d7cac0accbe"
+          "8a597ace-b8ee-b69e-9d51-ed9dbc1549f7"
         ]
       }
     ],
