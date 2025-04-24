@@ -239,5 +239,126 @@
     "triggers": {},
     "reRun": false,
     "readOnly": false
+  },
+  {
+    "id": "cec51a52-d99c-693a-555a-aae9a1c13835",
+    "job_name": "Pipeline 3",
+    "run_type": "spark",
+    "Global_variables": [],
+    "Pipeline_variables": [],
+    "settings": {
+      "concurrancy": "",
+      "elapsed_time_metric": "",
+      "isElapsedTimeMetricChecked": false
+    },
+    "connections": [
+      {
+        "connection_name": "JDBC connection",
+        "url": "jdbc:mysql://localhost:3306",
+        "username": "root",
+        "password": "root",
+        "database": "jobportal",
+        "provider": "MySQL",
+        "mysql_connector": "path",
+        "conn_id": 1791
+      }
+    ],
+    "tasks": [
+      {
+        "u_id": "a6564dc1-942a-086d-632f-c29785765d1e",
+        "id": "1-1",
+        "opr_name": "JDBC_reader",
+        "name": "ReadJDBC",
+        "description": "des",
+        "activity_state": false,
+        "timeout": "10",
+        "retry": "2",
+        "retry_interval": "2",
+        "secure_input": true,
+        "secure_output": true,
+        "input_items": [
+          {
+            "conn_id": 1791,
+            "tbname": "candidate",
+            "query": "select * from candidate"
+          }
+        ],
+        "user_properties": []
+      },
+      {
+        "u_id": "398d3d72-cfdd-78bf-ad40-6b8433c6c384",
+        "id": "1-1",
+        "opr_name": "JDBC_reader",
+        "name": " ReadJDBC copy(1) ",
+        "description": "des",
+        "activity_state": false,
+        "timeout": "2",
+        "retry": "2",
+        "retry_interval": "2",
+        "secure_input": true,
+        "secure_output": true,
+        "input_items": [
+          {
+            "conn_id": 1791,
+            "tbname": "candidate",
+            "query": "select * from candidate"
+          }
+        ],
+        "user_properties": [],
+        "dependency": [
+          "a6564dc1-942a-086d-632f-c29785765d1e"
+        ]
+      },
+      {
+        "u_id": "cd0779fa-ee69-43a8-d162-2cf869d31c0e",
+        "id": "3-20",
+        "opr_name": "intersection",
+        "name": "Intersection",
+        "description": "des",
+        "activity_state": false,
+        "timeout": "10",
+        "retry": "2",
+        "retry_interval": "2",
+        "secure_input": true,
+        "secure_output": true,
+        "input_items": [
+          {
+            "left_table": "w",
+            "right_table": "w"
+          }
+        ],
+        "user_properties": [],
+        "dependency": [
+          "398d3d72-cfdd-78bf-ad40-6b8433c6c384"
+        ]
+      },
+      {
+        "u_id": "714be698-f9be-0c79-b8d8-adb953f22daa",
+        "id": "2-1",
+        "opr_name": "JDBC_writer",
+        "name": "WriteJDBC",
+        "description": "des",
+        "activity_state": false,
+        "timeout": "9",
+        "retry": "2",
+        "retry_interval": "2",
+        "secure_input": true,
+        "secure_output": true,
+        "input_items": [
+          {
+            "conn_id": 1791,
+            "tbname": "candidate"
+          }
+        ],
+        "user_properties": [],
+        "dependency": [
+          "cd0779fa-ee69-43a8-d162-2cf869d31c0e"
+        ]
+      }
+    ],
+    "isStarted": true,
+    "triggers": {},
+    "reRun": false,
+    "readOnly": false
   }
 ]
