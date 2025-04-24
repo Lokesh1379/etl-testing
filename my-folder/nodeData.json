@@ -109,5 +109,64 @@
       }
     ],
     "run_type": ""
+  },
+  {
+    "id": "cec51a52-d99c-693a-555a-aae9a1c13835",
+    "job_nodes": [
+      {
+        "id": "1-1",
+        "name": "ReadJDBC",
+        "oprName": "JDBC_reader",
+        "type": "read io",
+        "connection_type": "JDBC",
+        "yamlPath": "/path/to/IOConnectors/ReadIO/JDBC_reader.yaml",
+        "imgpath": "/images/sidebar/JDBC_reader.png",
+        "x": 160.109375,
+        "y": 58.5,
+        "uniqueId": "a6564dc1-942a-086d-632f-c29785765d1e",
+        "u_id": "c271c2e8-95e7-af93-a794-023914bc7d52",
+        "activity_state": false
+      },
+      {
+        "id": "1-1",
+        "name": "ReadJDBC",
+        "oprName": "JDBC_reader",
+        "type": "read io",
+        "connection_type": "JDBC",
+        "yamlPath": "/path/to/IOConnectors/ReadIO/JDBC_reader.yaml",
+        "imgpath": "/images/sidebar/JDBC_reader.png",
+        "x": 334.109375,
+        "y": 56.5,
+        "uniqueId": "398d3d72-cfdd-78bf-ad40-6b8433c6c384",
+        "u_id": "cb3951f6-c531-0613-15d7-693eb5db6de6",
+        "activity_state": false
+      },
+      {
+        "id": "3-20",
+        "name": "Intersection",
+        "imgpath": "/images/sidebar/intersection.png",
+        "oprName": "intersection",
+        "yamlPath": "/path/to/transformations/intersection.yaml",
+        "x": 500.109375,
+        "y": 52.5,
+        "uniqueId": "cd0779fa-ee69-43a8-d162-2cf869d31c0e",
+        "u_id": "10d33b3c-09f5-e712-a59a-5024b81cc8a4",
+        "activity_state": false
+      },
+      {
+        "id": "2-1",
+        "name": "WriteJDBC",
+        "type": "write io",
+        "oprName": "JDBC_writer",
+        "imgpath": "/images/sidebar/JDBC_writer.png",
+        "yamlPath": "/path/to/IOConnectors/WriteIO/JDBC_writer.yaml",
+        "x": 664.109375,
+        "y": 52.5,
+        "uniqueId": "714be698-f9be-0c79-b8d8-adb953f22daa",
+        "u_id": "12a6cd1d-b4f5-43eb-87b7-544d40af02a5",
+        "activity_state": false
+      }
+    ],
+    "run_type": ""
   }
 ]
