@@ -1,8 +1,8 @@
 [
   {
-    "id": "600816b0-d91d-5f56-8488-7296f06dae97",
-    "job_name": "Adding Column",
-    "run_type": "sparkprocess",
+    "id": "fdf8ccd1-a685-74bd-4e24-8f6d88271135",
+    "job_name": "Add Column",
+    "run_type": "spark",
     "Global_variables": [],
     "Pipeline_variables": [],
     "settings": {
@@ -18,37 +18,27 @@
         "password": "root",
         "database": "jobportal",
         "provider": "MySQL",
-        "driver_path": "C:/Users/Dell/Downloads/mysql-connector-j-9.1.0.jar",
-        "conn_id": 4423
+        "mysql_connector": "path",
+        "conn_id": 1791
       },
       {
-        "connection_name": "JDBC connection",
+        "connection_name": "JDBC",
         "url": "jdbc:mysql://34.57.144.120:3306",
         "username": "remote_user",
         "password": "spark",
         "database": "jobportal",
         "provider": "MySQL",
-        "driver_path": "com.mysql.driver",
-        "conn_id": 4734
-      },
-      {
-        "connection_name": "JDBC connection3",
-        "url": "jdbc:mysql://34.57.144.120:3306",
-        "username": "remote_user",
-        "password": "spark",
-        "database": "jobportal",
-        "provider": "MySQL",
-        "driver_path": "/home/amruthabs122/mysql-connector-j-8.0.28.jar",
-        "conn_id": 3855
+        "mysql_connector": "/home/amruthabs122/mysql-connector-j-8.0.28.jar",
+        "conn_id": 1138
       }
     ],
     "tasks": [
       {
-        "u_id": "76172e69-c460-c96c-2c1f-f50acff16cbb",
-        "id": "2-1-1",
+        "u_id": "812c9b38-a11f-6c67-19ee-a97c189c9266",
+        "id": "1-1",
         "opr_name": "JDBC_reader",
         "name": "ReadJDBC",
-        "description": "description",
+        "description": "des",
         "activity_state": false,
         "timeout": "10",
         "retry": "2",
@@ -57,15 +47,15 @@
         "secure_output": true,
         "input_items": [
           {
-            "conn_id": 3855,
+            "conn_id": 1138,
             "tbname": "candidate",
-            "query": "SELECT * FROM CANDIDATE"
+            "query": "select * from candidate"
           }
         ],
         "user_properties": []
       },
       {
-        "u_id": "31fb1a6f-381d-550f-f6af-4d5163c67e5d",
+        "u_id": "b76f875b-a672-c187-ba4c-2d5052494ec0",
         "id": "3-1",
         "opr_name": "Add_column",
         "name": "Add Column",
@@ -84,275 +74,30 @@
         ],
         "user_properties": [],
         "dependency": [
-          "76172e69-c460-c96c-2c1f-f50acff16cbb"
+          "812c9b38-a11f-6c67-19ee-a97c189c9266"
         ]
       },
       {
-        "u_id": "d50cc7ce-f0fd-862b-7b7a-d2ca14aca1af",
-        "id": "2-2-1",
-        "opr_name": "JDBC_writer",
-        "name": "WriteJDBC",
-        "description": "des",
-        "activity_state": false,
-        "timeout": "10",
-        "retry": "2",
-        "retry_interval": "2",
-        "secure_input": true,
-        "secure_output": true,
-        "input_items": [
-          {
-            "conn_id": 3855,
-            "tbname": "add_col_new"
-          }
-        ],
-        "user_properties": [],
-        "dependency": [
-          "31fb1a6f-381d-550f-f6af-4d5163c67e5d"
-        ]
-      }
-    ],
-    "isStarted": false,
-    "triggers": {
-      "pipeline_id": "600816b0-d91d-5f56-8488-7296f06dae97",
-      "triggers_data": []
-    }
-  },
-  {
-    "id": "2dac6bb7-8e63-f290-6722-2157a8424c25",
-    "job_name": "Testing",
-    "run_type": "spark",
-    "Global_variables": [],
-    "Pipeline_variables": [],
-    "settings": {
-      "concurrancy": "",
-      "elapsed_time_metric": "",
-      "isElapsedTimeMetricChecked": false
-    },
-    "connections": [
-      {
-        "connection_name": "JDBC connection",
-        "url": "jdbc:mysql://localhost:3306",
-        "username": "root",
-        "password": "root",
-        "database": "jobportal",
-        "provider": "MySQL",
-        "mysql_connector": "path",
-        "conn_id": 1791
-      }
-    ],
-    "tasks": [
-      {
-        "u_id": "a77b69b5-bae1-e311-1e3e-23e1a4cd9549",
-        "id": "1-1",
-        "opr_name": "JDBC_reader",
-        "name": "ReadJDBC",
-        "description": "des",
-        "activity_state": false,
-        "timeout": "10",
-        "retry": "2",
-        "retry_interval": "2",
-        "secure_input": true,
-        "secure_output": true,
-        "input_items": [
-          {
-            "conn_id": 1791,
-            "tbname": "candidate",
-            "query": "select * from candidate"
-          }
-        ],
-        "user_properties": []
-      },
-      {
-        "u_id": "c053e91c-46b7-355f-8e72-50166df1572c",
-        "id": "3-15",
-        "opr_name": "filter",
-        "name": "Filter",
-        "description": "des",
-        "activity_state": false,
-        "timeout": "10",
-        "retry": "2",
-        "retry_interval": "2",
-        "secure_input": true,
-        "secure_output": true,
-        "input_items": [
-          {
-            "username": "2",
-            "password": "22",
-            "port number": "2",
-            "database": "2",
-            "terms": true
-          }
-        ],
-        "user_properties": [],
-        "dependency": [
-          "a77b69b5-bae1-e311-1e3e-23e1a4cd9549"
-        ]
-      },
-      {
-        "u_id": "348ee729-aae1-43dd-046e-012b05c19883",
-        "id": "3-33",
-        "opr_name": "",
-        "name": "SQL",
-        "description": "des",
-        "activity_state": false,
-        "timeout": "10",
-        "retry": "3",
-        "retry_interval": "2",
-        "secure_input": true,
-        "secure_output": true,
-        "input_items": [
-          {
-            "query": "2",
-            "tbname": "2"
-          }
-        ],
-        "user_properties": [],
-        "dependency": [
-          "c053e91c-46b7-355f-8e72-50166df1572c"
-        ]
-      },
-      {
-        "u_id": "ff83a9e6-3e89-7bdc-d010-c14911bacdf2",
-        "id": "2-1",
-        "opr_name": "JDBC_writer",
-        "name": "WriteJDBC",
-        "description": "de3s",
-        "activity_state": false,
-        "timeout": "2",
-        "retry": "2",
-        "retry_interval": "2",
-        "secure_input": true,
-        "secure_output": true,
-        "input_items": [
-          {
-            "conn_id": 1791,
-            "tbname": "candidate"
-          }
-        ],
-        "user_properties": [],
-        "dependency": [
-          "348ee729-aae1-43dd-046e-012b05c19883"
-        ]
-      }
-    ],
-    "isStarted": true,
-    "triggers": {},
-    "reRun": false,
-    "readOnly": false
-  },
-  {
-    "id": "cec51a52-d99c-693a-555a-aae9a1c13835",
-    "job_name": "Pipeline 3",
-    "run_type": "spark",
-    "Global_variables": [],
-    "Pipeline_variables": [],
-    "settings": {
-      "concurrancy": "",
-      "elapsed_time_metric": "",
-      "isElapsedTimeMetricChecked": false
-    },
-    "connections": [
-      {
-        "connection_name": "JDBC connection",
-        "url": "jdbc:mysql://localhost:3306",
-        "username": "root",
-        "password": "root",
-        "database": "jobportal",
-        "provider": "MySQL",
-        "mysql_connector": "path",
-        "conn_id": 1791
-      }
-    ],
-    "tasks": [
-      {
-        "u_id": "a6564dc1-942a-086d-632f-c29785765d1e",
-        "id": "1-1",
-        "opr_name": "JDBC_reader",
-        "name": "ReadJDBC",
-        "description": "des",
-        "activity_state": false,
-        "timeout": "10",
-        "retry": "2",
-        "retry_interval": "2",
-        "secure_input": true,
-        "secure_output": true,
-        "input_items": [
-          {
-            "conn_id": 1791,
-            "tbname": "candidate",
-            "query": "select * from candidate"
-          }
-        ],
-        "user_properties": []
-      },
-      {
-        "u_id": "398d3d72-cfdd-78bf-ad40-6b8433c6c384",
-        "id": "1-1",
-        "opr_name": "JDBC_reader",
-        "name": " ReadJDBC copy(1) ",
-        "description": "des",
-        "activity_state": false,
-        "timeout": "2",
-        "retry": "2",
-        "retry_interval": "2",
-        "secure_input": true,
-        "secure_output": true,
-        "input_items": [
-          {
-            "conn_id": 1791,
-            "tbname": "candidate",
-            "query": "select * from candidate"
-          }
-        ],
-        "user_properties": [],
-        "dependency": [
-          "a6564dc1-942a-086d-632f-c29785765d1e"
-        ]
-      },
-      {
-        "u_id": "cd0779fa-ee69-43a8-d162-2cf869d31c0e",
-        "id": "3-20",
-        "opr_name": "intersection",
-        "name": "Intersection",
-        "description": "des",
-        "activity_state": false,
-        "timeout": "10",
-        "retry": "2",
-        "retry_interval": "2",
-        "secure_input": true,
-        "secure_output": true,
-        "input_items": [
-          {
-            "left_table": "w",
-            "right_table": "w"
-          }
-        ],
-        "user_properties": [],
-        "dependency": [
-          "398d3d72-cfdd-78bf-ad40-6b8433c6c384"
-        ]
-      },
-      {
-        "u_id": "714be698-f9be-0c79-b8d8-adb953f22daa",
+        "u_id": "43ccc048-1d31-5680-79dc-9b320d169c24",
         "id": "2-1",
         "opr_name": "JDBC_writer",
         "name": "WriteJDBC",
         "description": "des",
         "activity_state": false,
-        "timeout": "9",
+        "timeout": "10",
         "retry": "2",
         "retry_interval": "2",
         "secure_input": true,
         "secure_output": true,
         "input_items": [
           {
-            "conn_id": 1791,
-            "tbname": "candidate"
+            "conn_id": 1138,
+            "tbname": "add_new_column"
           }
         ],
         "user_properties": [],
         "dependency": [
-          "cd0779fa-ee69-43a8-d162-2cf869d31c0e"
+          "b76f875b-a672-c187-ba4c-2d5052494ec0"
         ]
       }
     ],
