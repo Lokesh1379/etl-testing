@@ -1,6 +1,6 @@
 [
   {
-    "id": "46372dbb-e847-07f9-bccf-6ca5d0e91ab5",
+    "id": "9c7ef897-751c-7f64-1704-b25f899781d2",
     "job_name": "Pipeline 1",
     "run_type": "spark",
     "Global_variables": [],
@@ -20,11 +20,21 @@
         "provider": "MySQL",
         "mysql_connector": "/home/amruthabs122/mysql-connector-j-8.0.28.jar",
         "conn_id": 1138
+      },
+      {
+        "connection_name": "JDBC2",
+        "url": "jdbc:mysql://34.75.213.66:3306",
+        "username": "remote_user",
+        "password": "spark",
+        "database": "jobportal",
+        "provider": "MySQL",
+        "mysql_connector": "/home/kumarmanoj_iid/mysql-connector-j-8.0.33.jar",
+        "conn_id": 7602
       }
     ],
     "tasks": [
       {
-        "u_id": "e8bf9a0a-b3b5-39cf-500c-87aa493c738e",
+        "u_id": "c06cf213-bed1-19fd-e003-e37258b5f698",
         "id": "1-1",
         "opr_name": "JDBC_reader",
         "name": "ReadJDBC",
@@ -37,7 +47,7 @@
         "secure_output": true,
         "input_items": [
           {
-            "conn_id": 1138,
+            "conn_id": 7602,
             "tbname": "candidate",
             "query": "select * from candidate"
           }
@@ -45,10 +55,10 @@
         "user_properties": []
       },
       {
-        "u_id": "403bc306-f8cd-2a88-1aa2-fb5961b57b49",
-        "id": "3-1",
-        "opr_name": "Add_column",
-        "name": "Add Column",
+        "u_id": "c02f3166-ce59-a731-a9b8-071bd0683cb5",
+        "id": "3-32",
+        "opr_name": "sort",
+        "name": "Sort",
         "description": "des",
         "activity_state": false,
         "timeout": "10",
@@ -58,17 +68,17 @@
         "secure_output": true,
         "input_items": [
           {
-            "column_name": "status",
-            "value": "active"
+            "column_name": "last_name",
+            "sort_order": "desc"
           }
         ],
         "user_properties": [],
         "dependency": [
-          "e8bf9a0a-b3b5-39cf-500c-87aa493c738e"
+          "c06cf213-bed1-19fd-e003-e37258b5f698"
         ]
       },
       {
-        "u_id": "691c7c7e-718c-bfa0-a8ec-cad0a4cbc958",
+        "u_id": "7cf261d0-a889-eed1-415c-4a1986aae917",
         "id": "2-1",
         "opr_name": "JDBC_writer",
         "name": "WriteJDBC",
@@ -81,13 +91,13 @@
         "secure_output": true,
         "input_items": [
           {
-            "conn_id": 1138,
-            "tbname": "add_new_column"
+            "conn_id": 7602,
+            "tbname": "ui_test"
           }
         ],
         "user_properties": [],
         "dependency": [
-          "403bc306-f8cd-2a88-1aa2-fb5961b57b49"
+          "c02f3166-ce59-a731-a9b8-071bd0683cb5"
         ]
       }
     ],
