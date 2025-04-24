@@ -116,5 +116,128 @@
       "pipeline_id": "600816b0-d91d-5f56-8488-7296f06dae97",
       "triggers_data": []
     }
+  },
+  {
+    "id": "2dac6bb7-8e63-f290-6722-2157a8424c25",
+    "job_name": "Testing",
+    "run_type": "spark",
+    "Global_variables": [],
+    "Pipeline_variables": [],
+    "settings": {
+      "concurrancy": "",
+      "elapsed_time_metric": "",
+      "isElapsedTimeMetricChecked": false
+    },
+    "connections": [
+      {
+        "connection_name": "JDBC connection",
+        "url": "jdbc:mysql://localhost:3306",
+        "username": "root",
+        "password": "root",
+        "database": "jobportal",
+        "provider": "MySQL",
+        "mysql_connector": "path",
+        "conn_id": 1791
+      }
+    ],
+    "tasks": [
+      {
+        "u_id": "a77b69b5-bae1-e311-1e3e-23e1a4cd9549",
+        "id": "1-1",
+        "opr_name": "JDBC_reader",
+        "name": "ReadJDBC",
+        "description": "des",
+        "activity_state": false,
+        "timeout": "10",
+        "retry": "2",
+        "retry_interval": "2",
+        "secure_input": true,
+        "secure_output": true,
+        "input_items": [
+          {
+            "conn_id": 1791,
+            "tbname": "candidate",
+            "query": "select * from candidate"
+          }
+        ],
+        "user_properties": []
+      },
+      {
+        "u_id": "c053e91c-46b7-355f-8e72-50166df1572c",
+        "id": "3-15",
+        "opr_name": "filter",
+        "name": "Filter",
+        "description": "des",
+        "activity_state": false,
+        "timeout": "10",
+        "retry": "2",
+        "retry_interval": "2",
+        "secure_input": true,
+        "secure_output": true,
+        "input_items": [
+          {
+            "username": "2",
+            "password": "22",
+            "port number": "2",
+            "database": "2",
+            "terms": true
+          }
+        ],
+        "user_properties": [],
+        "dependency": [
+          "a77b69b5-bae1-e311-1e3e-23e1a4cd9549"
+        ]
+      },
+      {
+        "u_id": "348ee729-aae1-43dd-046e-012b05c19883",
+        "id": "3-33",
+        "opr_name": "",
+        "name": "SQL",
+        "description": "des",
+        "activity_state": false,
+        "timeout": "10",
+        "retry": "3",
+        "retry_interval": "2",
+        "secure_input": true,
+        "secure_output": true,
+        "input_items": [
+          {
+            "query": "2",
+            "tbname": "2"
+          }
+        ],
+        "user_properties": [],
+        "dependency": [
+          "c053e91c-46b7-355f-8e72-50166df1572c"
+        ]
+      },
+      {
+        "u_id": "ff83a9e6-3e89-7bdc-d010-c14911bacdf2",
+        "id": "2-1",
+        "opr_name": "JDBC_writer",
+        "name": "WriteJDBC",
+        "description": "de3s",
+        "activity_state": false,
+        "timeout": "2",
+        "retry": "2",
+        "retry_interval": "2",
+        "secure_input": true,
+        "secure_output": true,
+        "input_items": [
+          {
+            "conn_id": 1791,
+            "tbname": "candidate"
+          }
+        ],
+        "user_properties": [],
+        "dependency": [
+          "348ee729-aae1-43dd-046e-012b05c19883"
+        ]
+      }
+    ],
+    "isStarted": true,
+    "triggers": {},
+    "reRun": false,
+    "readOnly": false
   }
 ]
