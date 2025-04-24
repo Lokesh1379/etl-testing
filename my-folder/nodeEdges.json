@@ -213,5 +213,24 @@
         "id": "reactflow__edge-bb46091f-d5d6-ef2f-420f-768eb20420b2-0d086aff-19ae-3957-e79f-195160840ddc"
       }
     ]
+  },
+  {
+    "id": "4f1e87aa-7307-32e0-ab50-9e5032068a55",
+    "edges": [
+      {
+        "source": "b83b8212-e25f-ee9f-ac1b-5389a78948ec",
+        "sourceHandle": null,
+        "target": "27e1ae45-6dd6-cabc-3984-8f1e6a342687",
+        "targetHandle": null,
+        "id": "reactflow__edge-b83b8212-e25f-ee9f-ac1b-5389a78948ec-27e1ae45-6dd6-cabc-3984-8f1e6a342687"
+      },
+      {
+        "source": "27e1ae45-6dd6-cabc-3984-8f1e6a342687",
+        "sourceHandle": null,
+        "target": "7989b069-45a3-262d-688e-f4a32a1e8bc0",
+        "targetHandle": null,
+        "id": "reactflow__edge-27e1ae45-6dd6-cabc-3984-8f1e6a342687-7989b069-45a3-262d-688e-f4a32a1e8bc0"
+      }
+    ]
   }
 ]
