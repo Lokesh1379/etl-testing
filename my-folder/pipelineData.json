@@ -1,7 +1,7 @@
 [
   {
-    "id": "aa7f1883-3500-66fa-5d09-402cd4d75c7e",
-    "job_name": "Add column",
+    "id": "a66dd672-3226-503a-e828-8156bdc0efc3",
+    "job_name": "Pipeline 1",
     "run_type": "spark",
     "Global_variables": [],
     "Pipeline_variables": [],
@@ -12,19 +12,19 @@
     },
     "connections": [
       {
-        "connection_name": "JDBC connection",
+        "connection_name": "JDBC",
         "url": "jdbc:mysql://34.57.144.120:3306",
         "username": "remote_user",
         "password": "spark",
-        "database": "jdbc:mysql://34.57.144.120:3306",
+        "database": "jobportal",
         "provider": "MySQL",
         "mysql_connector": "/home/amruthabs122/mysql-connector-j-8.0.28.jar",
-        "conn_id": 8771
+        "conn_id": 1138
       }
     ],
     "tasks": [
       {
-        "u_id": "50f92a71-3969-2d01-0f15-d21561dab1a5",
+        "u_id": "453df481-5471-4301-dec6-f2e7a4373aac",
         "id": "1-1",
         "opr_name": "JDBC_reader",
         "name": "ReadJDBC",
@@ -34,10 +34,10 @@
         "retry": "2",
         "retry_interval": "2",
         "secure_input": true,
-        "secure_output": true,
+        "secure_output": false,
         "input_items": [
           {
-            "conn_id": 8771,
+            "conn_id": 1138,
             "tbname": "candidate",
             "query": "select * from candidate"
           }
@@ -45,7 +45,7 @@
         "user_properties": []
       },
       {
-        "u_id": "8a597ace-b8ee-b69e-9d51-ed9dbc1549f7",
+        "u_id": "bb46091f-d5d6-ef2f-420f-768eb20420b2",
         "id": "3-1",
         "opr_name": "Add_column",
         "name": "Add Column",
@@ -64,11 +64,11 @@
         ],
         "user_properties": [],
         "dependency": [
-          "50f92a71-3969-2d01-0f15-d21561dab1a5"
+          "453df481-5471-4301-dec6-f2e7a4373aac"
         ]
       },
       {
-        "u_id": "d41eb6bb-85f0-3e4e-b242-c411f0c35535",
+        "u_id": "0d086aff-19ae-3957-e79f-195160840ddc",
         "id": "2-1",
         "opr_name": "JDBC_writer",
         "name": "WriteJDBC",
@@ -81,13 +81,13 @@
         "secure_output": true,
         "input_items": [
           {
-            "conn_id": 8771,
-            "tbname": "candidate"
+            "conn_id": 1138,
+            "tbname": "add_new_column"
           }
         ],
         "user_properties": [],
         "dependency": [
-          "8a597ace-b8ee-b69e-9d51-ed9dbc1549f7"
+          "bb46091f-d5d6-ef2f-420f-768eb20420b2"
         ]
       }
     ],
