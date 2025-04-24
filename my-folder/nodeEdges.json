@@ -232,5 +232,24 @@
         "id": "reactflow__edge-cd7f7887-7085-076c-77c5-1edd9e23eefc-ca524449-5502-928b-2d8e-f8f050ddd87e"
       }
     ]
+  },
+  {
+    "id": "924496f9-ba13-438e-cb19-0f1cfc88ca5b",
+    "edges": [
+      {
+        "source": "0a774501-ebf7-545b-f0f7-75ad18a24786",
+        "sourceHandle": null,
+        "target": "b9ba9ca7-5864-584f-dd9c-4e50e02f98cd",
+        "targetHandle": null,
+        "id": "reactflow__edge-0a774501-ebf7-545b-f0f7-75ad18a24786-b9ba9ca7-5864-584f-dd9c-4e50e02f98cd"
+      },
+      {
+        "source": "b9ba9ca7-5864-584f-dd9c-4e50e02f98cd",
+        "sourceHandle": null,
+        "target": "f606f157-d09b-9bb4-6d21-186ef90af95e",
+        "targetHandle": null,
+        "id": "reactflow__edge-b9ba9ca7-5864-584f-dd9c-4e50e02f98cd-f606f157-d09b-9bb4-6d21-186ef90af95e"
+      }
+    ]
   }
 ]
