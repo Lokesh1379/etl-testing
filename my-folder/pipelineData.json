@@ -1,7 +1,7 @@
 [
   {
-    "id": "4f1e87aa-7307-32e0-ab50-9e5032068a55",
-    "job_name": "Pipeline 1",
+    "id": "1f780252-ec6a-b977-b968-98a0146ef66f",
+    "job_name": "Pipeline 2",
     "run_type": "spark",
     "Global_variables": [],
     "Pipeline_variables": [],
@@ -24,7 +24,7 @@
     ],
     "tasks": [
       {
-        "u_id": "b83b8212-e25f-ee9f-ac1b-5389a78948ec",
+        "u_id": "af92f122-0d34-dd15-a87d-ad7eb61f9e39",
         "id": "1-1",
         "opr_name": "JDBC_reader",
         "name": "ReadJDBC",
@@ -45,7 +45,7 @@
         "user_properties": []
       },
       {
-        "u_id": "27e1ae45-6dd6-cabc-3984-8f1e6a342687",
+        "u_id": "cd7f7887-7085-076c-77c5-1edd9e23eefc",
         "id": "3-1",
         "opr_name": "Add_column",
         "name": "Add Column",
@@ -64,11 +64,11 @@
         ],
         "user_properties": [],
         "dependency": [
-          "b83b8212-e25f-ee9f-ac1b-5389a78948ec"
+          "af92f122-0d34-dd15-a87d-ad7eb61f9e39"
         ]
       },
       {
-        "u_id": "7989b069-45a3-262d-688e-f4a32a1e8bc0",
+        "u_id": "ca524449-5502-928b-2d8e-f8f050ddd87e",
         "id": "2-1",
         "opr_name": "JDBC_writer",
         "name": "WriteJDBC",
@@ -82,12 +82,12 @@
         "input_items": [
           {
             "conn_id": 1138,
-            "tbname": "add_new_column"
+            "tbname": "candidate"
           }
         ],
         "user_properties": [],
         "dependency": [
-          "27e1ae45-6dd6-cabc-3984-8f1e6a342687"
+          "cd7f7887-7085-076c-77c5-1edd9e23eefc"
         ]
       }
     ],
