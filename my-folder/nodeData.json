@@ -98,5 +98,23 @@
       }
     ],
     "run_type": ""
+  },
+  {
+    "id": "bbef7a2e-3619-ba3d-09c4-a5e5fffd1375",
+    "job_nodes": [
+      {
+        "id": "3-14",
+        "name": "Decision Tree",
+        "imgpath": "/images/sidebar/Decision_Tree.png",
+        "oprName": "Decision_Tree",
+        "yamlPath": "/path/to/transformations/Decision_Tree.yaml",
+        "x": 230.109375,
+        "y": 70.5,
+        "uniqueId": "f973eb80-f046-f7a4-7998-c7261b3cf8b1",
+        "u_id": "de919c6d-1f05-8f32-fcea-b7f6da982a6a",
+        "activity_state": false
+      }
+    ],
+    "run_type": ""
   }
 ]
