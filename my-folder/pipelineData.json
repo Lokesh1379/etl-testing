@@ -198,8 +198,8 @@
     "kill_url": "/spark/kill-job/app-20250424103028-0168"
   },
   {
-    "id": "bbef7a2e-3619-ba3d-09c4-a5e5fffd1375",
-    "job_name": "Pipeline 3",
+    "id": "fb794abe-02e1-1c53-9cd3-96befb014565",
+    "job_name": "Add Column",
     "run_type": "spark",
     "Global_variables": [],
     "Pipeline_variables": [],
@@ -208,31 +208,85 @@
       "elapsed_time_metric": "",
       "isElapsedTimeMetricChecked": false
     },
-    "connections": [],
+    "connections": [
+      {
+        "connection_name": "JDBC2",
+        "url": "jdbc:mysql://34.75.213.66:3306",
+        "username": "remote_user",
+        "password": "spark",
+        "database": "jobportal",
+        "provider": "MySQL",
+        "mysql_connector": "/home/kumarmanoj_iid/mysql-connector-j-8.0.33.jar",
+        "conn_id": 7602
+      }
+    ],
     "tasks": [
       {
-        "u_id": "f973eb80-f046-f7a4-7998-c7261b3cf8b1",
-        "id": "3-14",
-        "opr_name": "Decision_Tree",
-        "name": "Decision Tree",
-        "description": "sddww",
+        "u_id": "3bb871f9-da5a-9f9c-8080-5f415444abe6",
+        "id": "1-1",
+        "opr_name": "JDBC_reader",
+        "name": "ReadJDBC",
+        "description": "des",
         "activity_state": false,
-        "timeout": "2",
+        "timeout": "10",
         "retry": "2",
         "retry_interval": "2",
         "secure_input": true,
         "secure_output": true,
         "input_items": [
           {
-            "features": [
-              "sasas",
-              "asas",
-              "asas"
-            ],
-            "target": "asasa"
+            "conn_id": 7602,
+            "tbname": "candidate",
+            "query": "select * from candidate"
           }
         ],
         "user_properties": []
+      },
+      {
+        "u_id": "8aeb814c-551c-5b37-247d-75a702eb9902",
+        "id": "3-1",
+        "opr_name": "Add_column",
+        "name": "Add Column",
+        "description": "des",
+        "activity_state": false,
+        "timeout": "10",
+        "retry": "2",
+        "retry_interval": "2",
+        "secure_input": true,
+        "secure_output": true,
+        "input_items": [
+          {
+            "column_name": "status",
+            "value": "active"
+          }
+        ],
+        "user_properties": [],
+        "dependency": [
+          "3bb871f9-da5a-9f9c-8080-5f415444abe6"
+        ]
+      },
+      {
+        "u_id": "1c0aab7a-9204-09bc-687b-86e53f7833a6",
+        "id": "2-1",
+        "opr_name": "JDBC_writer",
+        "name": "WriteJDBC",
+        "description": "des",
+        "activity_state": false,
+        "timeout": "10",
+        "retry": "2",
+        "retry_interval": "2",
+        "secure_input": true,
+        "secure_output": true,
+        "input_items": [
+          {
+            "conn_id": 7602,
+            "tbname": "add_new_column"
+          }
+        ],
+        "user_properties": [],
+        "dependency": [
+          "8aeb814c-551c-5b37-247d-75a702eb9902"
+        ]
       }
     ],
     "isStarted": true,
