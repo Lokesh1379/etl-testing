@@ -100,18 +100,45 @@
     "run_type": ""
   },
   {
-    "id": "bbef7a2e-3619-ba3d-09c4-a5e5fffd1375",
+    "id": "fb794abe-02e1-1c53-9cd3-96befb014565",
     "job_nodes": [
       {
-        "id": "3-14",
-        "name": "Decision Tree",
-        "imgpath": "/images/sidebar/Decision_Tree.png",
-        "oprName": "Decision_Tree",
-        "yamlPath": "/path/to/transformations/Decision_Tree.yaml",
-        "x": 230.109375,
-        "y": 70.5,
-        "uniqueId": "f973eb80-f046-f7a4-7998-c7261b3cf8b1",
-        "u_id": "de919c6d-1f05-8f32-fcea-b7f6da982a6a",
+        "id": "1-1",
+        "name": "ReadJDBC",
+        "oprName": "JDBC_reader",
+        "type": "read io",
+        "connection_type": "JDBC",
+        "yamlPath": "/path/to/IOConnectors/ReadIO/JDBC_reader.yaml",
+        "imgpath": "/images/sidebar/JDBC_reader.png",
+        "x": 240.109375,
+        "y": 55.5,
+        "uniqueId": "3bb871f9-da5a-9f9c-8080-5f415444abe6",
+        "u_id": "eb404ac9-9c87-bb4b-ab6b-3a3b00ccbddc",
+        "activity_state": false
+      },
+      {
+        "id": "3-1",
+        "name": "Add Column",
+        "oprName": "Add_column",
+        "imgpath": "/images/sidebar/Add_column.png",
+        "yamlPath": "/path/to/transformations/Add_column.yaml",
+        "x": 400.109375,
+        "y": 50.5,
+        "uniqueId": "8aeb814c-551c-5b37-247d-75a702eb9902",
+        "u_id": "e10df1f2-ccc9-6109-2048-297b609a59d6",
+        "activity_state": false
+      },
+      {
+        "id": "2-1",
+        "name": "WriteJDBC",
+        "type": "write io",
+        "oprName": "JDBC_writer",
+        "imgpath": "/images/sidebar/JDBC_writer.png",
+        "yamlPath": "/path/to/IOConnectors/WriteIO/JDBC_writer.yaml",
+        "x": 585.109375,
+        "y": 49.5,
+        "uniqueId": "1c0aab7a-9204-09bc-687b-86e53f7833a6",
+        "u_id": "89c909c4-c62d-29ad-b522-d4b9b85b574b",
         "activity_state": false
       }
     ],
