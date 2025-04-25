@@ -196,5 +196,48 @@
     "job_id": "1745490623",
     "application_id": "app-20250424103028-0168",
     "kill_url": "/spark/kill-job/app-20250424103028-0168"
+  },
+  {
+    "id": "bbef7a2e-3619-ba3d-09c4-a5e5fffd1375",
+    "job_name": "Pipeline 3",
+    "run_type": "spark",
+    "Global_variables": [],
+    "Pipeline_variables": [],
+    "settings": {
+      "concurrancy": "",
+      "elapsed_time_metric": "",
+      "isElapsedTimeMetricChecked": false
+    },
+    "connections": [],
+    "tasks": [
+      {
+        "u_id": "f973eb80-f046-f7a4-7998-c7261b3cf8b1",
+        "id": "3-14",
+        "opr_name": "Decision_Tree",
+        "name": "Decision Tree",
+        "description": "sddww",
+        "activity_state": false,
+        "timeout": "2",
+        "retry": "2",
+        "retry_interval": "2",
+        "secure_input": true,
+        "secure_output": true,
+        "input_items": [
+          {
+            "features": [
+              "sasas",
+              "asas",
+              "asas"
+            ],
+            "target": "asasa"
+          }
+        ],
+        "user_properties": []
+      }
+    ],
+    "isStarted": true,
+    "triggers": {},
+    "reRun": false,
+    "readOnly": false
   }
 ]
