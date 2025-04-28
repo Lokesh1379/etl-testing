@@ -1,0 +1,92 @@
+[
+  {
+    "id": "f5c2f8f4-5d01-d7a4-d6ef-b898b3465b7f",
+    "connection_name": "S3 Connection",
+    "type": "s3",
+    "imgpath": "/images/sidebar/s32.png",
+    "status": "active",
+    "input_items": [
+      {
+        "label": "Connection Name",
+        "name": "connection_name"
+      },
+      {
+        "label": "Access Name",
+        "name": "accessname"
+      },
+      {
+        "label": "Secret Name",
+        "name": "secretname"
+      },
+      {
+        "label": "Bucket Name",
+        "name": "bucketname"
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "77744635-20a8-4cbf-7902-349147e5dc71",
+    "connection_name": "ADLS Connection",
+    "type": "adls",
+    "imgpath": "/images/sidebar/azure.png",
+    "status": "inactive",
+    "input_items": [
+      {
+        "label": "Connection Name",
+        "name": "connection_name"
+      },
+      {
+        "label": "Tenant ID",
+        "name": "tenantid"
+      },
+      {
+        "label": "Client ID",
+        "name": "clientid"
+      },
+      {
+        "label": "Client secret",
+        "name": "clientsecret"
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "f21c5895-d18e-da16-578a-52a5a4164e86",
+    "connection_name": "JDBC Connection",
+    "type": "jdbc",
+    "imgpath": "/images/sidebar/readjdbc1.png",
+    "status": "active",
+    "input_items": [
+      {
+        "label": "Connection Name",
+        "name": "connection_name"
+      },
+      {
+        "label": "JDBC URL",
+        "name": "url"
+      },
+      {
+        "label": "User Name",
+        "name": "username"
+      },
+      {
+        "label": "Password",
+        "name": "password"
+      },
+      {
+        "label": "Database",
+        "name": "database"
+      },
+      {
+        "label": "Provide",
+        "name": "provider"
+      },
+      {
+        "label": "Driver Path",
+        "name": "mysql_connector"
+      }
+    ],
+    "children": []
+  }
+]
