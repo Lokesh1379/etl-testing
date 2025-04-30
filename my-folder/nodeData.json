@@ -171,8 +171,8 @@
         "oprName": "silver-gold",
         "imgpath": "/images/medalsidebar/gold-medal.png",
         "yamlPath": "/path/to/medallion/silver_to_gold.yaml",
-        "x": 250.109375,
-        "y": 49,
+        "x": 153.109375,
+        "y": 62,
         "uniqueId": "91c19215-2daa-f74b-b6a9-f18dd052f6fb",
         "u_id": "67a813f1-dd2b-83db-4928-e3fe7d7de890",
         "activity_state": false
