@@ -1,7 +1,7 @@
 [
   {
-    "id": "e9781a9f-1e06-8ec4-3224-9105439d3f17",
-    "job_name": "ADD COLUMN",
+    "id": "4d168a87-3934-f19a-01d6-548d8462ce5c",
+    "job_name": "Pipeline 2",
     "run_type": "spark",
     "Global_variables": [],
     "Pipeline_variables": [],
@@ -24,10 +24,10 @@
     ],
     "tasks": [
       {
-        "u_id": "8ec15ee3-a3e5-d124-a68d-a90151b0ee21",
-        "id": "1-1",
-        "opr_name": "JDBC_reader",
-        "name": "ReadJDBC",
+        "u_id": "4d0bf576-ba89-0e52-c1b9-f9a105417633",
+        "id": "5-2",
+        "opr_name": "bronze-silver",
+        "name": "Bronze-Silver",
         "description": "des",
         "activity_state": false,
         "timeout": "10",
@@ -37,67 +37,29 @@
         "secure_output": true,
         "input_items": [
           {
-            "conn_id": 1831,
-            "tbname": "candidate",
-            "query": "select * from candidate"
+            "bronze_conn_id": 1831,
+            "transformation_type": "sql",
+            "count_validation": true,
+            "schema_validation": true,
+            "pipeline_path_or_query": "C:\\\\Users\\\\Dell\\\\PycharmProjects\\\\etl-core-python\\\\sql\\\\SilverQueries.sql",
+            "silver_conn_id": 1831,
+            "tbname": "candidatesilver21",
+            "cdc_config": {
+              "primary_key": "id",
+              "update_date_column": "update_date",
+              "operation_type_column": "UPDATE",
+              "compare_tables": true,
+              "bronze_table": "candidate",
+              "silver_table": "candidates"
+            }
           }
         ],
         "user_properties": []
-      },
-      {
-        "u_id": "60bff129-a2df-4a0e-bdcc-d8cfd9fe6dde",
-        "id": "3-1",
-        "opr_name": "Add_column",
-        "name": "Add Column",
-        "description": "des",
-        "activity_state": false,
-        "timeout": "10",
-        "retry": "2",
-        "retry_interval": "2",
-        "secure_input": true,
-        "secure_output": true,
-        "input_items": [
-          {
-            "column_name": "status",
-            "value": "active"
-          }
-        ],
-        "user_properties": [],
-        "dependency": [
-          "8ec15ee3-a3e5-d124-a68d-a90151b0ee21"
-        ]
-      },
-      {
-        "u_id": "c3c70815-5b90-245e-3057-b0b468313076",
-        "id": "2-1",
-        "opr_name": "JDBC_writer",
-        "name": "WriteJDBC",
-        "description": "des",
-        "activity_state": false,
-        "timeout": "10",
-        "retry": "2",
-        "retry_interval": "2",
-        "secure_input": true,
-        "secure_output": true,
-        "input_items": [
-          {
-            "conn_id": 1831,
-            "tbname": "add_new_column"
-          }
-        ],
-        "user_properties": [],
-        "dependency": [
-          "60bff129-a2df-4a0e-bdcc-d8cfd9fe6dde"
-        ]
       }
     ],
     "isStarted": true,
     "triggers": {},
-    "reRun": true,
-    "readOnly": false,
-    "job_id": "1745986395",
-    "tracking_url": "/spark/job-status/1745986395",
-    "application_id": "app-20250430041323-0409",
-    "kill_url": "/spark/kill-job/app-20250430041323-0409"
+    "reRun": false,
+    "readOnly": false
   }
 ]
