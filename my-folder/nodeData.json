@@ -143,5 +143,23 @@
       }
     ],
     "run_type": ""
+  },
+  {
+    "id": "4d168a87-3934-f19a-01d6-548d8462ce5c",
+    "job_nodes": [
+      {
+        "id": "5-2",
+        "name": "Bronze-Silver",
+        "oprName": "bronze-silver",
+        "imgpath": "/images/medalsidebar/silver-medal.png",
+        "yamlPath": "/path/to/medallion/bronze_to_silver.yaml",
+        "x": 204.5,
+        "y": 16,
+        "uniqueId": "4d0bf576-ba89-0e52-c1b9-f9a105417633",
+        "u_id": "13e45128-33e2-e13a-6149-15f3108048ba",
+        "activity_state": false
+      }
+    ],
+    "run_type": ""
   }
 ]
