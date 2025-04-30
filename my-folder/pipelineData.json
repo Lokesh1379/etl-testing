@@ -124,9 +124,9 @@
     "triggers": {},
     "reRun": true,
     "readOnly": false,
-    "tracking_url": "/spark/job-status/1745987647",
-    "job_id": "1745987647",
-    "application_id": "app-20250430043416-0415",
-    "kill_url": "/spark/kill-job/app-20250430043416-0415"
+    "job_id": "1745987873",
+    "tracking_url": "/spark/job-status/1745987873",
+    "application_id": "app-20250430043802-0416",
+    "kill_url": "/spark/kill-job/app-20250430043802-0416"
   }
 ]
