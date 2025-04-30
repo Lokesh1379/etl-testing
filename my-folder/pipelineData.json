@@ -1,6 +1,6 @@
 [
   {
-    "id": "b2e39104-f7cb-6100-a941-f35f7d0c9920",
+    "id": "e9781a9f-1e06-8ec4-3224-9105439d3f17",
     "job_name": "ADD COLUMN",
     "run_type": "spark",
     "Global_variables": [],
@@ -24,7 +24,7 @@
     ],
     "tasks": [
       {
-        "u_id": "43e29ead-5973-7282-a7e9-faaf44725954",
+        "u_id": "8ec15ee3-a3e5-d124-a68d-a90151b0ee21",
         "id": "1-1",
         "opr_name": "JDBC_reader",
         "name": "ReadJDBC",
@@ -45,7 +45,7 @@
         "user_properties": []
       },
       {
-        "u_id": "7589976d-707e-549f-ec2e-988fdb26bd4b",
+        "u_id": "60bff129-a2df-4a0e-bdcc-d8cfd9fe6dde",
         "id": "3-1",
         "opr_name": "Add_column",
         "name": "Add Column",
@@ -64,11 +64,11 @@
         ],
         "user_properties": [],
         "dependency": [
-          "43e29ead-5973-7282-a7e9-faaf44725954"
+          "8ec15ee3-a3e5-d124-a68d-a90151b0ee21"
         ]
       },
       {
-        "u_id": "1222024f-711b-b7b1-d34d-d08cc27e5a11",
+        "u_id": "c3c70815-5b90-245e-3057-b0b468313076",
         "id": "2-1",
         "opr_name": "JDBC_writer",
         "name": "WriteJDBC",
@@ -87,17 +87,13 @@
         ],
         "user_properties": [],
         "dependency": [
-          "7589976d-707e-549f-ec2e-988fdb26bd4b"
+          "60bff129-a2df-4a0e-bdcc-d8cfd9fe6dde"
         ]
       }
     ],
     "isStarted": true,
     "triggers": {},
-    "reRun": true,
-    "readOnly": false,
-    "tracking_url": "/spark/job-status/1745912821",
-    "job_id": "1745912821",
-    "application_id": "app-20250429074710-0322",
-    "kill_url": "/spark/kill-job/app-20250429074710-0322"
+    "reRun": false,
+    "readOnly": false
   }
 ]
