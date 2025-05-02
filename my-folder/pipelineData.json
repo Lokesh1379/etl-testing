@@ -223,7 +223,11 @@
     ],
     "isStarted": true,
     "triggers": {},
-    "reRun": false,
-    "readOnly": false
+    "reRun": true,
+    "readOnly": false,
+    "tracking_url": "/spark/job-status/1746164879",
+    "job_id": "1746164879",
+    "application_id": "app-20250502054807-0549",
+    "kill_url": "/spark/kill-job/app-20250502054807-0549"
   }
 ]
