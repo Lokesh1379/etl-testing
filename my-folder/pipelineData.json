@@ -229,5 +229,23 @@
     "job_id": "1746435224",
     "application_id": "app-20250505085353-0109",
     "kill_url": "/spark/kill-job/app-20250505085353-0109"
+  },
+  {
+    "id": "3886620c-51ec-1719-05e4-b4a14de73975",
+    "job_name": "Pipeline 1",
+    "run_type": "",
+    "Global_variables": [],
+    "Pipeline_variables": [],
+    "settings": {
+      "concurrancy": "",
+      "elapsed_time_metric": "",
+      "isElapsedTimeMetricChecked": false
+    },
+    "connections": [],
+    "tasks": [],
+    "isStarted": true,
+    "triggers": {},
+    "reRun": false,
+    "readOnly": false
   }
 ]
