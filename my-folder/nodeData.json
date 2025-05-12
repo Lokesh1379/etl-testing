@@ -20,8 +20,8 @@
         "connection_type": "JDBC",
         "yamlPath": "/path/to/IOConnectors/ReadIO/JDBC_reader.yaml",
         "imgpath": "/images/sidebar/JDBC_reader.png",
-        "x": 137.109375,
-        "y": 71.5,
+        "x": 168.109375,
+        "y": 66.5,
         "uniqueId": "cace3d2b-6f0b-d0ae-178d-3b4788c8167c",
         "u_id": "8fccef91-b6e1-85da-e0d7-48380a6ad03e",
         "activity_state": false
