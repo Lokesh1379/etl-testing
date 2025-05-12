@@ -1,68 +1,5 @@
 [
   {
-    "id": "4d168a87-3934-f19a-01d6-548d8462ce5c",
-    "job_name": "BRONZE - SILVER",
-    "run_type": "spark",
-    "Global_variables": [],
-    "Pipeline_variables": [],
-    "settings": {
-      "concurrancy": "",
-      "elapsed_time_metric": "",
-      "isElapsedTimeMetricChecked": false
-    },
-    "connections": [
-      {
-        "connection_name": "JDBC connection",
-        "url": "jdbc:mysql://34.74.248.240:3306",
-        "username": "remote_user",
-        "password": "spark",
-        "database": "jobportal",
-        "provider": "MySQL",
-        "mysql_connector": "/home/kumarmanoj_iid/mysql-connector-j-8.0.33.jar",
-        "conn_id": 1831
-      }
-    ],
-    "tasks": [
-      {
-        "u_id": "4d0bf576-ba89-0e52-c1b9-f9a105417633",
-        "id": "5-2",
-        "opr_name": "bronze-silver",
-        "name": "Bronze-Silver",
-        "description": "des",
-        "activity_state": false,
-        "timeout": "10",
-        "retry": "2",
-        "retry_interval": "2",
-        "secure_input": true,
-        "secure_output": true,
-        "input_items": [
-          {
-            "bronze_conn_id": 1831,
-            "transformation_type": "sql",
-            "count_validation": true,
-            "schema_validation": true,
-            "pipeline_path_or_query": "C:\\\\Users\\\\Dell\\\\PycharmProjects\\\\etl-core-python\\\\sql\\\\SilverQueries.sql",
-            "silver_conn_id": 1831,
-            "tbname": "candidatesilver21",
-            "cdc_config": {
-              "primary_key": "id",
-              "update_date_column": "update_date",
-              "operation_type_column": "UPDATE",
-              "compare_tables": true,
-              "bronze_table": "candidate",
-              "silver_table": "candidates"
-            }
-          }
-        ],
-        "user_properties": []
-      }
-    ],
-    "isStarted": true,
-    "triggers": {},
-    "reRun": false,
-    "readOnly": false
-  },
-  {
     "id": "3e538672-a18f-8243-0208-dd2668d02b16",
     "job_name": "SILVER - GOLD",
     "run_type": "spark",
@@ -229,23 +166,5 @@
     "job_id": "1746435224",
     "application_id": "app-20250505085353-0109",
     "kill_url": "/spark/kill-job/app-20250505085353-0109"
-  },
-  {
-    "id": "3886620c-51ec-1719-05e4-b4a14de73975",
-    "job_name": "Pipeline 1",
-    "run_type": "",
-    "Global_variables": [],
-    "Pipeline_variables": [],
-    "settings": {
-      "concurrancy": "",
-      "elapsed_time_metric": "",
-      "isElapsedTimeMetricChecked": false
-    },
-    "connections": [],
-    "tasks": [],
-    "isStarted": true,
-    "triggers": {},
-    "reRun": false,
-    "readOnly": false
   }
 ]
