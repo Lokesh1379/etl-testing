@@ -166,5 +166,58 @@
     "job_id": "1746435224",
     "application_id": "app-20250505085353-0109",
     "kill_url": "/spark/kill-job/app-20250505085353-0109"
+  },
+  {
+    "id": "733b58f3-a8f6-61f3-6c75-c9fdacf8f9b8",
+    "job_name": "Pipeline 1",
+    "run_type": "spark",
+    "Global_variables": [],
+    "Pipeline_variables": [],
+    "settings": {
+      "concurrancy": "",
+      "elapsed_time_metric": "",
+      "isElapsedTimeMetricChecked": false
+    },
+    "connections": [
+      {
+        "connection_name": "JDBC connection",
+        "url": "jdbc:mysql://34.74.248.240:3306",
+        "username": "remote_user",
+        "password": "spark",
+        "database": "jobportal",
+        "provider": "MySQL",
+        "mysql_connector": "/home/kumarmanoj_iid/mysql-connector-j-8.0.33.jar",
+        "conn_id": 1831
+      }
+    ],
+    "tasks": [
+      {
+        "u_id": "1af510db-e2f6-e4bb-3c9b-17f350167c17",
+        "id": "2-10",
+        "opr_name": "CSV_Writer",
+        "name": "CSV Writer",
+        "description": "des",
+        "activity_state": false,
+        "timeout": "00:10:00",
+        "retry": 2,
+        "retry_interval": "00:01:00",
+        "secure_input": true,
+        "secure_output": true,
+        "input_items": [
+          {
+            "conn_id": 1831,
+            "file_path": "s",
+            "delimiter": "s",
+            "header": 1,
+            "format": "approximate"
+          }
+        ],
+        "user_properties": []
+      }
+    ],
+    "isStarted": true,
+    "triggers": {},
+    "reRun": false,
+    "readOnly": false
   }
 ]
