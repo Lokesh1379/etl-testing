@@ -206,5 +206,23 @@
       }
     ],
     "run_type": ""
+  },
+  {
+    "id": "733b58f3-a8f6-61f3-6c75-c9fdacf8f9b8",
+    "job_nodes": [
+      {
+        "id": "2-10",
+        "name": "CSV Writer",
+        "oprName": "CSV_Writer",
+        "imgpath": "/images/sidebar/csv.png",
+        "yamlPath": "/path/to/IOConnectors/WriteIO/CSV_Writer.yaml",
+        "x": 158.5,
+        "y": 94.5,
+        "uniqueId": "1af510db-e2f6-e4bb-3c9b-17f350167c17",
+        "u_id": "391c6050-7e67-1c91-1c3c-7ffa4234ae3a",
+        "activity_state": false
+      }
+    ],
+    "run_type": ""
   }
 ]
