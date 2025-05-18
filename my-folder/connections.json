@@ -1,0 +1,123 @@
+[
+  {
+    "id": "02d9dab9-a3f5-032a-535e-57e49df0c4c1",
+    "connection_name": "S3 Connection",
+    "type": "s3",
+    "imgpath": "/images/sidebar/s32.png",
+    "status": "active",
+    "input_items": [
+      {
+        "label": "Connection Name",
+        "name": "connection_name"
+      },
+      {
+        "label": "Access Name",
+        "name": "accessname"
+      },
+      {
+        "label": "Secret Name",
+        "name": "secretname"
+      },
+      {
+        "label": "Bucket Name",
+        "name": "bucketname"
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "f32b1f92-dda3-cab6-caf9-0ccfc9dc8fdb",
+    "connection_name": "ADLS Connection",
+    "type": "adls",
+    "imgpath": "/images/sidebar/azure.png",
+    "status": "inactive",
+    "input_items": [
+      {
+        "label": "Connection Name",
+        "name": "connection_name"
+      },
+      {
+        "label": "Tenant ID",
+        "name": "tenantid"
+      },
+      {
+        "label": "Client ID",
+        "name": "clientid"
+      },
+      {
+        "label": "Client secret",
+        "name": "clientsecret"
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "80fc0be7-119e-dd55-c046-a66281e2f7a2",
+    "connection_name": "JDBC Connection",
+    "type": "jdbc",
+    "imgpath": "/images/sidebar/readjdbc1.png",
+    "status": "active",
+    "input_items": [
+      {
+        "label": "Connection Name",
+        "name": "connection_name"
+      },
+      {
+        "label": "JDBC URL",
+        "name": "url"
+      },
+      {
+        "label": "User Name",
+        "name": "username"
+      },
+      {
+        "label": "Password",
+        "name": "password"
+      },
+      {
+        "label": "Database",
+        "name": "database"
+      },
+      {
+        "label": "Provide",
+        "name": "provider"
+      },
+      {
+        "label": "Driver Path",
+        "name": "mysql_connector"
+      }
+    ],
+    "children": [
+      {
+        "connection_name": "JDBC connection",
+        "url": "jdbc:mysql://localhost:3306",
+        "username": "root",
+        "password": "root",
+        "database": "jobportal",
+        "provider": "MySQL",
+        "mysql_connector": "path",
+        "conn_id": 1791
+      },
+      {
+        "connection_name": "JDBC",
+        "url": "jdbc:mysql://34.57.144.120:3306",
+        "username": "remote_user",
+        "password": "spark",
+        "database": "jobportal",
+        "provider": "MySQL",
+        "mysql_connector": "/home/amruthabs122/mysql-connector-j-8.0.28.jar",
+        "conn_id": 1138
+      },
+      {
+        "connection_name": "JDBC2",
+        "url": "jdbc:mysql://34.75.213.66:3306",
+        "username": "remote_user",
+        "password": "spark",
+        "database": "jobportal",
+        "provider": "MySQL",
+        "mysql_connector": "/home/kumarmanoj_iid/mysql-connector-j-8.0.33.jar",
+        "conn_id": 7602
+      }
+    ]
+  }
+]
