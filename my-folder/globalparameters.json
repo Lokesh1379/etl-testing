@@ -1,0 +1,32 @@
+[
+  {
+    "id": "42faae25-af29-9119-bd40-cf0ec6d86597",
+    "name": "concat",
+    "value": "concat",
+    "type": "int"
+  },
+  {
+    "id": "9d4362fd-4a35-b56b-7bb4-3033fdc7fc5f",
+    "name": "Adding",
+    "value": "Math(+)",
+    "type": "int"
+  },
+  {
+    "id": "867c850a-0e6d-ef1f-dd1f-58f6fea6f9f3",
+    "name": "Sunstract",
+    "value": "Math(-)",
+    "type": "int"
+  },
+  {
+    "id": "fac06ebf-ebc9-42e2-3b4e-8532cb5b1462",
+    "name": "Muliplication",
+    "value": "Math(*)",
+    "type": "int"
+  },
+  {
+    "id": "572472a8-6fe1-8778-96ba-9ff4e322f607",
+    "name": "Division",
+    "value": "Math(%)",
+    "type": "int"
+  }
+]
