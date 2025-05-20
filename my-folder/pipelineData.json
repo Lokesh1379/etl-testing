@@ -168,9 +168,9 @@
     "kill_url": "/spark/kill-job/app-20250505085353-0109"
   },
   {
-    "id": "733b58f3-a8f6-61f3-6c75-c9fdacf8f9b8",
-    "job_name": "Pipeline 1",
-    "run_type": "spark",
+    "id": "e44c6006-cd28-60db-9a21-d91193f4c352",
+    "job_name": "DYNAMICEXPR",
+    "run_type": "",
     "Global_variables": [],
     "Pipeline_variables": [],
     "settings": {
@@ -178,24 +178,13 @@
       "elapsed_time_metric": "",
       "isElapsedTimeMetricChecked": false
     },
-    "connections": [
-      {
-        "connection_name": "JDBC connection",
-        "url": "jdbc:mysql://34.74.248.240:3306",
-        "username": "remote_user",
-        "password": "spark",
-        "database": "jobportal",
-        "provider": "MySQL",
-        "mysql_connector": "/home/kumarmanoj_iid/mysql-connector-j-8.0.33.jar",
-        "conn_id": 1831
-      }
-    ],
+    "connections": [],
     "tasks": [
       {
-        "u_id": "1af510db-e2f6-e4bb-3c9b-17f350167c17",
-        "id": "2-10",
-        "opr_name": "CSV_Writer",
-        "name": "CSV Writer",
+        "u_id": "ee7b1cba-185d-54b6-ab55-6005484831b8",
+        "id": "3-2",
+        "opr_name": "aggregator",
+        "name": "Aggregator",
         "description": "des",
         "activity_state": false,
         "timeout": "00:10:00",
@@ -205,11 +194,9 @@
         "secure_output": true,
         "input_items": [
           {
-            "conn_id": 1831,
-            "file_path": "s",
-            "delimiter": "s",
-            "header": 1,
-            "format": "approximate"
+            "group_by": "Name",
+            "column_name": "",
+            "function": "sum"
           }
         ],
         "user_properties": []
