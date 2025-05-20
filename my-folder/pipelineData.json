@@ -1,7 +1,7 @@
 [
   {
     "id": "3e538672-a18f-8243-0208-dd2668d02b16",
-    "job_name": "SILVER - GOLD",
+    "job_name": "SILVER_BRONZE",
     "run_type": "spark",
     "Global_variables": [],
     "Pipeline_variables": [],
