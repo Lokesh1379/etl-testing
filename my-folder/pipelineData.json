@@ -67,112 +67,73 @@
     "kill_url": "/spark/kill-job/app-20250430044213-0418"
   },
   {
-    "id": "82b05d95-4d93-6b13-22b7-605a2b24f23d",
-    "job_name": "ADD COLUMN",
-    "run_type": "spark",
-    "Global_variables": [],
-    "Pipeline_variables": [],
-    "settings": {
-      "concurrancy": "",
-      "elapsed_time_metric": "",
-      "isElapsedTimeMetricChecked": false
-    },
-    "connections": [
-      {
-        "connection_name": "JDBC connection",
-        "url": "jdbc:mysql://34.74.248.240:3306",
-        "username": "remote_user",
-        "password": "spark",
-        "database": "jobportal",
-        "provider": "MySQL",
-        "mysql_connector": "/home/kumarmanoj_iid/mysql-connector-j-8.0.33.jar",
-        "conn_id": 1831
-      }
-    ],
-    "tasks": [
-      {
-        "u_id": "3eb9fbef-028b-0ef2-6ba9-44e36564c63a",
-        "id": "1-1",
-        "opr_name": "JDBC_reader",
-        "name": "ReadJDBC",
-        "description": "des",
-        "activity_state": false,
-        "timeout": "10",
-        "retry": "2",
-        "retry_interval": "2",
-        "secure_input": true,
-        "secure_output": true,
-        "input_items": [
-          {
-            "conn_id": 1831,
-            "tbname": "candidate",
-            "query": "select * from candidate"
-          }
-        ],
-        "user_properties": []
-      },
-      {
-        "u_id": "24571edc-70a2-1250-ec27-aeeb26730575",
-        "id": "3-1",
-        "opr_name": "Add_column",
-        "name": "Add Column",
-        "description": "des",
-        "activity_state": false,
-        "timeout": "10",
-        "retry": "2",
-        "retry_interval": "2",
-        "secure_input": true,
-        "secure_output": true,
-        "input_items": [
-          {
-            "column_name": "status",
-            "value": "active"
-          }
-        ],
-        "user_properties": [],
-        "dependency": [
-          "3eb9fbef-028b-0ef2-6ba9-44e36564c63a"
-        ]
-      },
-      {
-        "u_id": "5fef682a-21a4-8c31-32f8-996fffb1fc05",
-        "id": "2-1",
-        "opr_name": "JDBC_writer",
-        "name": "WriteJDBC",
-        "description": "des",
-        "activity_state": false,
-        "timeout": "10",
-        "retry": "2",
-        "retry_interval": "2",
-        "secure_input": true,
-        "secure_output": true,
-        "input_items": [
-          {
-            "conn_id": 1831,
-            "tbname": "add_new_column"
-          }
-        ],
-        "user_properties": [],
-        "dependency": [
-          "24571edc-70a2-1250-ec27-aeeb26730575"
-        ]
-      }
-    ],
-    "isStarted": true,
-    "triggers": {},
-    "reRun": true,
-    "readOnly": false,
-    "tracking_url": "/spark/job-status/1746435224",
-    "job_id": "1746435224",
-    "application_id": "app-20250505085353-0109",
-    "kill_url": "/spark/kill-job/app-20250505085353-0109"
-  },
-  {
     "id": "e44c6006-cd28-60db-9a21-d91193f4c352",
     "job_name": "DYNAMICEXPR",
     "run_type": "spark",
-    "Global_variables": [],
-    "Pipeline_variables": [],
+    "Global_variables": [
+      {
+        "id": "1fe6ac71-f099-d12f-e40a-0c1c5d239106",
+        "name": "parameter1",
+        "value": "parameter Value1",
+        "type": "float"
+      },
+      {
+        "id": "73b2abdb-227b-f825-df98-210d10a12bd0",
+        "name": "parameter2",
+        "value": "parameter Value2",
+        "type": "string"
+      },
+      {
+        "id": "8e58488a-a372-514c-7da7-75e04f80788e",
+        "name": "parameter3",
+        "value": "parameter Value3",
+        "type": "object"
+      },
+      {
+        "id": "221e92bc-0a23-dca4-b1a8-2ccec8b80331",
+        "name": "parameter4",
+        "value": "parameter Value4",
+        "type": "secureString"
+      },
+      {
+        "id": "73fb10f3-b46e-3481-d3ac-bec581f14eef",
+        "name": "parameter5",
+        "value": "parameter Value5",
+        "type": "bool"
+      }
+    ],
+    "Pipeline_variables": [
+      {
+        "id": "0f3ab4e5-9785-e67d-e0b1-b836e04a9e2b",
+        "name": "valriable name1",
+        "value": "Variable1",
+        "type": "int"
+      },
+      {
+        "id": "d3bd4577-b78d-df92-9984-e78c2751cc04",
+        "name": "valriable name2",
+        "value": "valriable2",
+        "type": "int"
+      },
+      {
+        "id": "6b82c613-60b1-442e-652b-0b150935177f",
+        "name": "valriable name3",
+        "value": "valriable3",
+        "type": "int"
+      },
+      {
+        "id": "49601fbf-05b8-9213-311a-f21283402e17",
+        "name": "valriable name4",
+        "value": "valriable4",
+        "type": "int"
+      },
+      {
+        "id": "309d1c50-adba-2b35-ab10-57760a981a40",
+        "name": "valriable name5",
+        "value": "valriable5",
+        "type": "int"
+      }
+    ],
     "settings": {
       "concurrancy": "",
       "elapsed_time_metric": "",
