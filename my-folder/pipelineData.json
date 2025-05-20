@@ -170,7 +170,7 @@
   {
     "id": "e44c6006-cd28-60db-9a21-d91193f4c352",
     "job_name": "DYNAMICEXPR",
-    "run_type": "",
+    "run_type": "spark",
     "Global_variables": [],
     "Pipeline_variables": [],
     "settings": {
@@ -195,7 +195,7 @@
         "input_items": [
           {
             "group_by": "Name",
-            "column_name": "",
+            "column_name": "column name",
             "function": "sum"
           }
         ],
