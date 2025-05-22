@@ -258,6 +258,103 @@
         "dependency": [
           "3ea183f5-7771-e18f-72dd-4a90f7b4ef9f"
         ]
+      },
+      {
+        "u_id": "3ef14280-8734-5b46-6e4e-5051dcebfb5c",
+        "id": "1-1",
+        "opr_name": "JDBC_reader",
+        "name": " ReadJDBC copy(1) ",
+        "description": "",
+        "activity_state": false,
+        "timeout": "00:10:00",
+        "retry": 2,
+        "retry_interval": "00:01:00",
+        "secure_input": false,
+        "secure_output": false,
+        "input_items": [
+          {
+            "conn_id": "",
+            "tbname": "",
+            "query": ""
+          }
+        ],
+        "user_properties": [],
+        "dependency": [
+          "88bdc800-79ac-74d6-52cc-bc3ec387d6a7"
+        ]
+      },
+      {
+        "u_id": "14c77241-bbfa-b97e-97bf-2d50f4a3341a",
+        "id": "3-2",
+        "opr_name": "aggregator",
+        "name": "Aggregator",
+        "description": "",
+        "activity_state": false,
+        "timeout": "00:10:00",
+        "retry": 2,
+        "retry_interval": "00:01:00",
+        "secure_input": false,
+        "secure_output": false,
+        "input_items": [
+          {
+            "group_by": "",
+            "column_name": "",
+            "function": ""
+          }
+        ],
+        "user_properties": [],
+        "dependency": [
+          "88bdc800-79ac-74d6-52cc-bc3ec387d6a7"
+        ]
+      },
+      {
+        "u_id": "9408af70-1172-c7c2-d717-e08c203eca09",
+        "id": "3-3",
+        "opr_name": "approx_count",
+        "name": "Approx Count",
+        "description": "",
+        "activity_state": false,
+        "timeout": "00:10:00",
+        "retry": 2,
+        "retry_interval": "00:01:00",
+        "secure_input": false,
+        "secure_output": false,
+        "input_items": [
+          {
+            "output_column": "",
+            "column_name": "",
+            "approximate": ""
+          }
+        ],
+        "user_properties": [],
+        "dependency": [
+          "14c77241-bbfa-b97e-97bf-2d50f4a3341a"
+        ]
+      },
+      {
+        "u_id": "b35bd493-d486-acd2-4272-47f21dba3bc9",
+        "id": "2-1",
+        "opr_name": "JDBC_writer",
+        "name": " WriteJDBC copy(1) ",
+        "description": "",
+        "activity_state": false,
+        "timeout": "00:10:00",
+        "retry": 2,
+        "retry_interval": "00:01:00",
+        "secure_input": false,
+        "secure_output": false,
+        "input_items": [
+          {
+            "conn_id": "",
+            "tbname": ""
+          }
+        ],
+        "user_properties": [],
+        "dependency": [
+          "eb9b38c5-6c26-9626-9e47-5b4c36356db5",
+          "9408af70-1172-c7c2-d717-e08c203eca09",
+          "3ef14280-8734-5b46-6e4e-5051dcebfb5c"
+        ]
       }
     ],
     "isStarted": true,
