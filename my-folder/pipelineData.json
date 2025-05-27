@@ -51,9 +51,9 @@
         "name": "Add Column",
         "description": "des",
         "activity_state": false,
-        "timeout": "10",
+        "timeout": "00:10:00",
         "retry": "2",
-        "retry_interval": "2",
+        "retry_interval": "00:01:00",
         "secure_input": true,
         "secure_output": true,
         "input_items": [
@@ -74,9 +74,9 @@
         "name": "WriteJDBC",
         "description": "des",
         "activity_state": false,
-        "timeout": "10",
+        "timeout": "00:10:00",
         "retry": "2",
-        "retry_interval": "2",
+        "retry_interval": "00:01:00",
         "secure_input": true,
         "secure_output": true,
         "input_items": [
