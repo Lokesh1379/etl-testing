@@ -105,10 +105,10 @@
     "triggers": {},
     "reRun": true,
     "readOnly": false,
-    "tracking_url": "/spark/job-status/1748414738",
-    "job_id": "1748414738",
-    "application_id": "app-20250528064547-0061",
-    "kill_url": "/spark/kill-job/app-20250528064547-0061"
+    "job_id": "1748414827",
+    "tracking_url": "/spark/job-status/1748414827",
+    "application_id": "app-20250528064716-0062",
+    "kill_url": "/spark/kill-job/app-20250528064716-0062"
   },
   {
     "id": "1e4afba4-ae51-4495-a0b6-50eab9a63098",
