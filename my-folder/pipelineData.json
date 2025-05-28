@@ -20,6 +20,16 @@
         "provider": "MySQL",
         "mysql_connector": "/home/kumarmanoj_iid/mysql-connector-j-8.0.33.jar",
         "conn_id": 7602
+      },
+      {
+        "connection_name": "JDBC connection",
+        "url": "jdbc:mysql://34.41.102.232:3306",
+        "username": "remote_user",
+        "password": "spark",
+        "database": "jobportal",
+        "provider": "MySQL",
+        "mysql_connector": "/home/amruthaiid/mysql-connector-j-8.0.33.jar",
+        "conn_id": 7350
       }
     ],
     "tasks": [
@@ -37,7 +47,7 @@
         "secure_output": true,
         "input_items": [
           {
-            "conn_id": 7350,
+            "conn_id": 1138,
             "tbname": "candidate",
             "query": "select * from candidate"
           }
@@ -81,7 +91,7 @@
         "secure_output": true,
         "input_items": [
           {
-            "conn_id": 7350,
+            "conn_id": 1138,
             "tbname": "add_new_column"
           }
         ],
@@ -95,10 +105,10 @@
     "triggers": {},
     "reRun": true,
     "readOnly": false,
-    "tracking_url": "/spark/job-status/1748411890",
-    "job_id": "1748411890",
-    "application_id": "app-20250528055818-0058",
-    "kill_url": "/spark/kill-job/app-20250528055818-0058"
+    "tracking_url": "/spark/job-status/1748414738",
+    "job_id": "1748414738",
+    "application_id": "app-20250528064547-0061",
+    "kill_url": "/spark/kill-job/app-20250528064547-0061"
   },
   {
     "id": "1e4afba4-ae51-4495-a0b6-50eab9a63098",
