@@ -47,7 +47,7 @@
         "secure_output": true,
         "input_items": [
           {
-            "conn_id": 1138,
+            "conn_id": 7350,
             "tbname": "candidate",
             "query": "select * from candidate"
           }
@@ -91,7 +91,7 @@
         "secure_output": true,
         "input_items": [
           {
-            "conn_id": 1138,
+            "conn_id": 7350,
             "tbname": "add_new_column"
           }
         ],
