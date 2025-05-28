@@ -37,7 +37,7 @@
         "secure_output": true,
         "input_items": [
           {
-            "conn_id": 7602,
+            "conn_id": 7350,
             "tbname": "candidate",
             "query": "select * from candidate"
           }
@@ -81,7 +81,7 @@
         "secure_output": true,
         "input_items": [
           {
-            "conn_id": 7602,
+            "conn_id": 7350,
             "tbname": "add_new_column"
           }
         ],
@@ -93,95 +93,12 @@
     ],
     "isStarted": true,
     "triggers": {},
-    "reRun": false,
-    "readOnly": false
-  },
-  {
-    "connections": [
-      {
-        "connection_name": "JDBC connection",
-        "url": "jdbc:mysql://34.75.213.66:3306",
-        "username": "root",
-        "password": "root",
-        "database": "jobportal",
-        "provider": "MySQL",
-        "mysql_connector": "home/shiva_iid/mysql-connector-j-8.0.33.jar",
-        "conn_id": 123
-      }
-    ],
-    "tasks": [
-      {
-        "u_id": "3eb9fbef-028b-0ef2-6ba9-44e36564c63a",
-        "id": 1,
-        "opr_name": "JDBC_reader",
-        "name": "ReadJDBC",
-        "description": "des",
-        "activity_state": false,
-        "timeout": "10",
-        "retry": "2",
-        "retry_interval": "2",
-        "secure_input": true,
-        "secure_output": true,
-        "input_items": [
-          {
-            "conn_id": 1831,
-            "tbname": "candidate",
-            "query": "select * from candidate"
-          }
-        ],
-        "user_properties": []
-      },
-      {
-        "u_id": "24571edc-70a2-1250-ec27-aeeb26730575",
-        "id": 2,
-        "opr_name": "Add_column",
-        "name": "Add Column",
-        "description": "des",
-        "activity_state": false,
-        "timeout": "10",
-        "retry": "2",
-        "retry_interval": "2",
-        "secure_input": true,
-        "secure_output": true,
-        "input_items": [
-          {
-            "column_name": "status",
-            "value": "active"
-          }
-        ],
-        "user_properties": [],
-        "dependency": [
-          "3eb9fbef-028b-0ef2-6ba9-44e36564c63a"
-        ]
-      },
-      {
-        "u_id": "5fef682a-21a4-8c31-32f8-996fffb1fc05",
-        "id": 3,
-        "opr_name": "JDBC_writer",
-        "name": "WriteJDBC",
-        "description": "des",
-        "activity_state": false,
-        "timeout": "10",
-        "retry": "2",
-        "retry_interval": "2",
-        "secure_input": true,
-        "secure_output": true,
-        "input_items": [
-          {
-            "conn_id": 1831,
-            "tbname": "add_new_column"
-          }
-        ],
-        "user_properties": [],
-        "dependency": [
-          "24571edc-70a2-1250-ec27-aeeb26730575"
-        ]
-      }
-    ],
-    "isStarted": true,
-    "triggers": {},
-    "reRun": false,
-    "readOnly": false
+    "reRun": true,
+    "readOnly": false,
+    "tracking_url": "/spark/job-status/1748411890",
+    "job_id": "1748411890",
+    "application_id": "app-20250528055818-0058",
+    "kill_url": "/spark/kill-job/app-20250528055818-0058"
   },
   {
     "id": "1e4afba4-ae51-4495-a0b6-50eab9a63098",
