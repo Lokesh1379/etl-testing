@@ -89,16 +89,6 @@
     ],
     "children": [
       {
-        "connection_name": "JDBC connection",
-        "url": "jdbc:mysql://localhost:3306",
-        "username": "root",
-        "password": "root",
-        "database": "jobportal",
-        "provider": "MySQL",
-        "mysql_connector": "path",
-        "conn_id": 1791
-      },
-      {
         "connection_name": "JDBC",
         "url": "jdbc:mysql://34.57.144.120:3306",
         "username": "remote_user",
@@ -107,16 +97,6 @@
         "provider": "MySQL",
         "mysql_connector": "/home/amruthabs122/mysql-connector-j-8.0.28.jar",
         "conn_id": 1138
-      },
-      {
-        "connection_name": "JDBC2",
-        "url": "jdbc:mysql://34.75.213.66:3306",
-        "username": "remote_user",
-        "password": "spark",
-        "database": "jobportal",
-        "provider": "MySQL",
-        "mysql_connector": "/home/kumarmanoj_iid/mysql-connector-j-8.0.33.jar",
-        "conn_id": 7602
       }
     ]
   }
