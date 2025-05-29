@@ -20,8 +20,8 @@
         "connection_type": "JDBC",
         "yamlPath": "/path/to/IOConnectors/ReadIO/JDBC_reader.yaml",
         "imgpath": "/images/sidebar/JDBC_reader.png",
-        "x": 168.109375,
-        "y": 66.5,
+        "x": 0,
+        "y": 0,
         "uniqueId": "cace3d2b-6f0b-d0ae-178d-3b4788c8167c",
         "u_id": "8fccef91-b6e1-85da-e0d7-48380a6ad03e",
         "activity_state": false
@@ -32,8 +32,8 @@
         "oprName": "Add_column",
         "imgpath": "/images/sidebar/Add_column.png",
         "yamlPath": "/path/to/transformations/Add_column.yaml",
-        "x": 350.109375,
-        "y": 67.5,
+        "x": 0,
+        "y": 86,
         "uniqueId": "efd18cf5-1949-82d9-3d84-060df2551005",
         "u_id": "251b7338-de48-dc03-973d-04e6c3ad6c84",
         "activity_state": false
@@ -45,8 +45,8 @@
         "oprName": "JDBC_writer",
         "imgpath": "/images/sidebar/JDBC_writer.png",
         "yamlPath": "/path/to/IOConnectors/WriteIO/JDBC_writer.yaml",
-        "x": 532.109375,
-        "y": 67.5,
+        "x": 0,
+        "y": 172,
         "uniqueId": "933b3165-fe7f-cbb3-1ec5-d17105509654",
         "u_id": "90cb371d-3331-c72b-21b2-91f8e8268462",
         "activity_state": false
