@@ -89,13 +89,13 @@
     ],
     "children": [
       {
-        "connection_name": "JDBC connection",
-        "url": "jdbc:mysql://34.74.248.240:3306",
+        "connection_name": "New Connection",
+        "url": "jdbc:mysql://34.41.102.232:3306",
         "username": "remote_user",
         "password": "spark",
         "database": "jobportal",
         "provider": "MySQL",
-        "mysql_connector": "/home/kumarmanoj_iid/mysql-connector-j-8.0.33.jar",
+        "mysql_connector": "/home/amruthaiid/mysql-connector-j-8.0.33.jar",
         "conn_id": 1831
       }
     ]
