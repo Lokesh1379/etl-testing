@@ -1,7 +1,7 @@
 [
   {
-    "id": "3e538672-a18f-8243-0208-dd2668d02b16",
-    "job_name": "SILVER_BRONZE",
+    "id": "64638697-52e3-5f59-c69c-7fb32272a9b8",
+    "job_name": "Pipeline 1",
     "run_type": "spark",
     "Global_variables": [],
     "Pipeline_variables": [],
@@ -24,176 +24,7 @@
     ],
     "tasks": [
       {
-        "u_id": "91c19215-2daa-f74b-b6a9-f18dd052f6fb",
-        "id": "5-3",
-        "opr_name": "silver-gold",
-        "name": "Silver-Gold",
-        "description": "des",
-        "activity_state": false,
-        "timeout": "10",
-        "retry": "2",
-        "retry_interval": "2",
-        "secure_input": true,
-        "secure_output": true,
-        "input_items": [
-          {
-            "silver_conn_id": 1831,
-            "transformation_type": "sql",
-            "count_validation": true,
-            "schema_validation": true,
-            "pipeline_path_or_query": "C:\\\\Users\\\\Dell\\\\PycharmProjects\\\\etl-core-python\\\\sql\\\\SilverQueries.sql",
-            "gold_conn_id": 1831,
-            "tbname": "candidatesilver21",
-            "cdc_config": {
-              "primary_key": "id",
-              "update_date_column": "update_date",
-              "operation_type_column": "UPDATE",
-              "compare_tables": true,
-              "silver_table": "candidates",
-              "gold_table": "candidatesilver21"
-            }
-          }
-        ],
-        "user_properties": []
-      }
-    ],
-    "isStarted": true,
-    "triggers": {},
-    "reRun": true,
-    "readOnly": false,
-    "job_id": "1745988124",
-    "tracking_url": "/spark/job-status/1745988124",
-    "application_id": "app-20250430044213-0418",
-    "kill_url": "/spark/kill-job/app-20250430044213-0418"
-  },
-  {
-    "id": "e44c6006-cd28-60db-9a21-d91193f4c352",
-    "job_name": "DYNAMICEXPR",
-    "run_type": "spark",
-    "Global_variables": [
-      {
-        "id": "1fe6ac71-f099-d12f-e40a-0c1c5d239106",
-        "name": "parameter1",
-        "value": "parameter Value1",
-        "type": "float"
-      },
-      {
-        "id": "73b2abdb-227b-f825-df98-210d10a12bd0",
-        "name": "parameter2",
-        "value": "parameter Value2",
-        "type": "string"
-      },
-      {
-        "id": "8e58488a-a372-514c-7da7-75e04f80788e",
-        "name": "parameter3",
-        "value": "parameter Value3",
-        "type": "object"
-      },
-      {
-        "id": "221e92bc-0a23-dca4-b1a8-2ccec8b80331",
-        "name": "parameter4",
-        "value": "parameter Value4",
-        "type": "secureString"
-      },
-      {
-        "id": "73fb10f3-b46e-3481-d3ac-bec581f14eef",
-        "name": "parameter5",
-        "value": "parameter Value5",
-        "type": "bool"
-      }
-    ],
-    "Pipeline_variables": [
-      {
-        "id": "0f3ab4e5-9785-e67d-e0b1-b836e04a9e2b",
-        "name": "valriable name1",
-        "value": "Variable1",
-        "type": "int"
-      },
-      {
-        "id": "d3bd4577-b78d-df92-9984-e78c2751cc04",
-        "name": "valriable name2",
-        "value": "valriable2",
-        "type": "int"
-      },
-      {
-        "id": "6b82c613-60b1-442e-652b-0b150935177f",
-        "name": "valriable name3",
-        "value": "valriable3",
-        "type": "int"
-      },
-      {
-        "id": "49601fbf-05b8-9213-311a-f21283402e17",
-        "name": "valriable name4",
-        "value": "valriable4",
-        "type": "int"
-      },
-      {
-        "id": "309d1c50-adba-2b35-ab10-57760a981a40",
-        "name": "valriable name5",
-        "value": "valriable5",
-        "type": "int"
-      }
-    ],
-    "settings": {
-      "concurrancy": "",
-      "elapsed_time_metric": "",
-      "isElapsedTimeMetricChecked": false
-    },
-    "connections": [],
-    "tasks": [
-      {
-        "u_id": "ee7b1cba-185d-54b6-ab55-6005484831b8",
-        "id": "3-2",
-        "opr_name": "aggregator",
-        "name": "Aggregator",
-        "description": "des",
-        "activity_state": false,
-        "timeout": "00:10:00",
-        "retry": 2,
-        "retry_interval": "00:01:00",
-        "secure_input": true,
-        "secure_output": true,
-        "input_items": [
-          {
-            "group_by": "Name",
-            "column_name": "column name",
-            "function": "sum"
-          }
-        ],
-        "user_properties": []
-      }
-    ],
-    "isStarted": true,
-    "triggers": {},
-    "reRun": false,
-    "readOnly": false
-  },
-  {
-    "id": "afdd6044-ef6e-3c15-31ac-76986d2355c5",
-    "job_name": "ADD COLUMN",
-    "run_type": "spark",
-    "Global_variables": [],
-    "Pipeline_variables": [],
-    "settings": {
-      "concurrancy": "",
-      "elapsed_time_metric": "",
-      "isElapsedTimeMetricChecked": false
-    },
-    "connections": [
-      {
-        "connection_name": "JDBC connection",
-        "url": "jdbc:mysql://34.74.248.240:3306",
-        "username": "remote_user",
-        "password": "spark",
-        "database": "jobportal",
-        "provider": "MySQL",
-        "mysql_connector": "/home/kumarmanoj_iid/mysql-connector-j-8.0.33.jar",
-        "conn_id": 1831
-      }
-    ],
-    "tasks": [
-      {
-        "u_id": "88bdc800-79ac-74d6-52cc-bc3ec387d6a7",
+        "u_id": "494b09b6-70c2-5520-6174-13e51f28599e",
         "id": "1-1",
         "opr_name": "JDBC_reader",
         "name": "ReadJDBC",
@@ -214,9 +45,9 @@
         "user_properties": []
       },
       {
-        "u_id": "3ea183f5-7771-e18f-72dd-4a90f7b4ef9f",
+        "u_id": "effc0aca-c0b7-7068-4423-09e63b005c5a",
         "id": "3-1",
-        "opr_name": "Add_column",
+        "opr_name": "Add_Column",
         "name": "Add Column",
         "description": "des",
         "activity_state": false,
@@ -233,11 +64,11 @@
         ],
         "user_properties": [],
         "dependency": [
-          "88bdc800-79ac-74d6-52cc-bc3ec387d6a7"
+          "494b09b6-70c2-5520-6174-13e51f28599e"
         ]
       },
       {
-        "u_id": "eb9b38c5-6c26-9626-9e47-5b4c36356db5",
+        "u_id": "08bb57e0-e45a-98ad-435a-6d59b4e9c793",
         "id": "2-1",
         "opr_name": "JDBC_writer",
         "name": "WriteJDBC",
@@ -256,104 +87,7 @@
         ],
         "user_properties": [],
         "dependency": [
-          "3ea183f5-7771-e18f-72dd-4a90f7b4ef9f"
-        ]
-      },
-      {
-        "u_id": "3ef14280-8734-5b46-6e4e-5051dcebfb5c",
-        "id": "1-1",
-        "opr_name": "JDBC_reader",
-        "name": " ReadJDBC copy(1) ",
-        "description": "",
-        "activity_state": false,
-        "timeout": "00:10:00",
-        "retry": 2,
-        "retry_interval": "00:01:00",
-        "secure_input": false,
-        "secure_output": false,
-        "input_items": [
-          {
-            "conn_id": "",
-            "tbname": "",
-            "query": ""
-          }
-        ],
-        "user_properties": [],
-        "dependency": [
-          "88bdc800-79ac-74d6-52cc-bc3ec387d6a7"
-        ]
-      },
-      {
-        "u_id": "14c77241-bbfa-b97e-97bf-2d50f4a3341a",
-        "id": "3-2",
-        "opr_name": "aggregator",
-        "name": "Aggregator",
-        "description": "",
-        "activity_state": false,
-        "timeout": "00:10:00",
-        "retry": 2,
-        "retry_interval": "00:01:00",
-        "secure_input": false,
-        "secure_output": false,
-        "input_items": [
-          {
-            "group_by": "",
-            "column_name": "",
-            "function": ""
-          }
-        ],
-        "user_properties": [],
-        "dependency": [
-          "88bdc800-79ac-74d6-52cc-bc3ec387d6a7"
-        ]
-      },
-      {
-        "u_id": "9408af70-1172-c7c2-d717-e08c203eca09",
-        "id": "3-3",
-        "opr_name": "approx_count",
-        "name": "Approx Count",
-        "description": "",
-        "activity_state": false,
-        "timeout": "00:10:00",
-        "retry": 2,
-        "retry_interval": "00:01:00",
-        "secure_input": false,
-        "secure_output": false,
-        "input_items": [
-          {
-            "output_column": "",
-            "column_name": "",
-            "approximate": ""
-          }
-        ],
-        "user_properties": [],
-        "dependency": [
-          "14c77241-bbfa-b97e-97bf-2d50f4a3341a"
-        ]
-      },
-      {
-        "u_id": "b35bd493-d486-acd2-4272-47f21dba3bc9",
-        "id": "2-1",
-        "opr_name": "JDBC_writer",
-        "name": " WriteJDBC copy(1) ",
-        "description": "",
-        "activity_state": false,
-        "timeout": "00:10:00",
-        "retry": 2,
-        "retry_interval": "00:01:00",
-        "secure_input": false,
-        "secure_output": false,
-        "input_items": [
-          {
-            "conn_id": "",
-            "tbname": ""
-          }
-        ],
-        "user_properties": [],
-        "dependency": [
-          "eb9b38c5-6c26-9626-9e47-5b4c36356db5",
-          "9408af70-1172-c7c2-d717-e08c203eca09",
-          "3ef14280-8734-5b46-6e4e-5051dcebfb5c"
+          "effc0aca-c0b7-7068-4423-09e63b005c5a"
         ]
       }
     ],
